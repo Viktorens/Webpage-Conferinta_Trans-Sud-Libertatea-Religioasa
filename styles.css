@@ -727,6 +727,7 @@ footer {
     cursor: pointer;
     font-size: 25px;
     line-height: 48px;
+    -moz-block-height: 48px;
     width: 50px;
     bottom: 55px;
     right: 20%;
@@ -835,10 +836,6 @@ footer {
         line-height: 52px;
     }
     .menuButtonMobile .bannerWrapper .bannerButton:hover {
-        width: 50px;
-    }
-    .scrollToTopBtn {
-        line-height: 55px;
         width: 50px;
     }
 }
