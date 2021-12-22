@@ -837,6 +837,10 @@ footer {
     .menuButtonMobile .bannerWrapper .bannerButton:hover {
         width: 50px;
     }
+    .scrollToTopBtn {
+        line-height: 55px;
+        width: 50px;
+    }
 }
 
 
