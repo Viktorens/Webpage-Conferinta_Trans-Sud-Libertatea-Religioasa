@@ -257,8 +257,8 @@ p {
 
 .bannerWrapper .bannerButton {
     display: inline-block;
-    height: 60px;
-    width: 60px;
+    height: 2.2em;
+    width: 2.2em;
     margin: 0 5px;
     overflow: hidden;
     background: #002938;
@@ -270,25 +270,28 @@ p {
 }
 
 .bannerWrapper .bannerButton:nth-child(1):hover {
-    width: 180px;
+    /* width: 180px; */
+    width: 6.5em;
 }
 
 .bannerWrapper .bannerButton:nth-child(2):hover {
-    width: 205px;
+    /* width: 205px; */
+    width: 7.25em;
 }
 
 .bannerWrapper .bannerButton:nth-child(3):hover {
-    width: 205px;
+    /* width: 205px; */
+    width: 7.25em;
 }
 
 .bannerWrapper .bannerButton .icon {
     display: inline-block;
-    height: 60px;
-    width: 60px;
+    height: 2.2em;
+    width: 2.2em;
     text-align: center;
     border-radius: 50px;
     box-sizing: border-box;
-    line-height: 60px;
+    line-height: 2;
     background: #f5f5f5;
     color: #252525;
 }
@@ -298,8 +301,8 @@ p {
 }
 
 .bannerWrapper .bannerButton .icon i {
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 1.05em;
+    line-height: 2;
     transition: all 0.3s ease-out;
 }
 
@@ -310,7 +313,7 @@ p {
 .bannerWrapper .bannerButton span {
     font-size: 30px;
     font-weight: 300;
-    line-height: 60px;
+    line-height: 1;
     margin-left: 5px;
     transition: all 0.3s ease-out;
     color: #f5f5f5;
@@ -353,7 +356,7 @@ p {
     cursor: default;
     background-color: #002938;
     border-radius: 50px;
-    width: 230px;
+    width: 7em;
     margin: auto;
     margin-bottom: 30px;
     margin-top: 75px;
@@ -680,7 +683,7 @@ footer {
 
 .wrapper .button .icon i {
     margin-left: 1.5px;
-    font-size: 2.1em;
+    font-size: 2em;
     line-height: 2;
     transition: all 0.3s ease-out;
 }
@@ -878,6 +881,9 @@ footer {
         background-attachment: scroll;
     }
     .menuButtonMobile {
+        visibility: visible;
+    }
+    .menuButton {
         visibility: hidden;
     }
 }
@@ -947,5 +953,11 @@ footer {
     }
     .symbol {
         max-width: 40%;
+    }
+    .menuButtonMobile {
+        visibility: hidden;
+    }
+    .menuButton {
+        visibility: visible;
     }
 }
