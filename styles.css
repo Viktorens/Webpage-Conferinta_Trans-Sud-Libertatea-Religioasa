@@ -353,7 +353,7 @@ p {
     cursor: default;
     background-color: #002938;
     border-radius: 50px;
-    width: 7em;
+    width: 6em;
     margin: auto;
     margin-bottom: 30px;
     margin-top: 75px;
@@ -680,7 +680,7 @@ footer {
 
 .wrapper .button .icon i {
     margin-left: 1.5px;
-    font-size: 2em;
+    font-size: 2.1em;
     line-height: 2;
     transition: all 0.3s ease-out;
 }
