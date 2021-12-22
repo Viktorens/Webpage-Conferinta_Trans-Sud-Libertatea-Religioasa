@@ -651,17 +651,14 @@ footer {
 }
 
 .wrapper .button:nth-child(1):hover {
-    /* width: 165px;  */
     width: 12.5em;
 }
 
 .wrapper .button:nth-child(2):hover {
-    /* width: 215px; */
     width: 16.5em;
 }
 
 .wrapper .button:nth-child(3):hover {
-    /* width: 225px; */
     width: 17em;
 }
 
@@ -682,6 +679,7 @@ footer {
 }
 
 .wrapper .button .icon i {
+    margin-left: 1.5px;
     font-size: 2.1em;
     line-height: 2;
     transition: all 0.3s ease-out;
