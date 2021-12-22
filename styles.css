@@ -627,6 +627,7 @@ footer {
 .wrapper {
     display: flex;
     place-content: center;
+    align-items: center;
     padding: 25px;
 }
 
@@ -726,7 +727,7 @@ footer {
     cursor: pointer;
     font-size: 25px;
     line-height: 48px;
-    width: 48px;
+    width: 14%;
     bottom: 55px;
     right: 20%;
     z-index: 100;
