@@ -298,8 +298,8 @@ p {
 }
 
 .bannerWrapper .bannerButton .icon i {
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 1em;
+    line-height: 2.08;
     transition: all 0.3s ease-out;
 }
 
@@ -679,8 +679,8 @@ footer {
 }
 
 .wrapper .button .icon i {
-    font-size: 25px;
-    line-height: 60px;
+    font-size: 1.8em;
+    line-height: 2.25;
     transition: all 0.3s ease-out;
 }
 
