@@ -270,17 +270,14 @@ p {
 }
 
 .bannerWrapper .bannerButton:nth-child(1):hover {
-    /* width: 180px; */
     width: 6.5em;
 }
 
 .bannerWrapper .bannerButton:nth-child(2):hover {
-    /* width: 205px; */
     width: 7.25em;
 }
 
 .bannerWrapper .bannerButton:nth-child(3):hover {
-    /* width: 205px; */
     width: 7.25em;
 }
 
@@ -825,21 +822,6 @@ footer {
     }
     .menuButton {
         visibility: hidden;
-    }
-    .bannerWrapper .bannerButton {
-        height: 50px;
-        width: 50px;
-    }
-    .bannerWrapper .bannerButton .icon {
-        height: 50px;
-        width: 50px;
-        line-height: 50px;
-    }
-    .bannerWrapper .bannerButton .icon i {
-        line-height: 52px;
-    }
-    .menuButtonMobile .bannerWrapper .bannerButton:hover {
-        width: 50px;
     }
 }
 
