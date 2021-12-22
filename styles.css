@@ -726,8 +726,7 @@ footer {
     color: #252525;
     cursor: pointer;
     font-size: 25px;
-    line-height: 48px;
-    -moz-line-height: 48px;
+    line-height: 1.9;
     width: 50px;
     bottom: 55px;
     right: 20%;
