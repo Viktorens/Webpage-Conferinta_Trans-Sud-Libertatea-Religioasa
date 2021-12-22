@@ -1,0 +1,948 @@
+/* General */
+
+html * {
+    font-family: 'Noto Sans';
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+p {
+    margin: 0;
+}
+
+#main {
+    width: 85.72%;
+}
+
+
+/* Show/Hide Elements */
+
+.elements-hide {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.elements-visible {
+    transition: 0.5s;
+    opacity: 100%;
+}
+
+
+/* Gradient */
+
+#gradient-canvas {
+    position: fixed;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    width: 100%;
+    --gradient-color-1: #9ae1f0;
+    --gradient-color-2: #cbdfeb;
+    --gradient-color-3: #007f98;
+    --gradient-color-4: #00d5f3;
+    z-index: -2;
+}
+
+
+/* Add blur */
+
+.blur-filter {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    filter: blur(20px);
+}
+
+.no-blur-filter {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    filter: none;
+}
+
+
+/* Menu Overlay */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 6;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 127, 152, 0.75);
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-radius: 4vh 0 0 4vh;
+    box-shadow: 0 0 15em 0 rgba(0, 0, 0);
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    max-width: 0%;
+    text-align: left;
+    margin-top: 30px;
+    left: 7vh;
+}
+
+
+/* Title of overlay */
+
+.overlay-content h4 {
+    padding: 8px;
+    text-decoration: none;
+    color: #f5f5f5;
+    display: block;
+    /* Display block instead of inline */
+    margin: 0;
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #f5f5f5;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #255760;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+    position: absolute;
+    left: 7vh;
+    width: 0%;
+}
+
+
+/* Sabbath Column */
+
+.sabbath-column {
+    position: fixed;
+    height: calc(100vh - calc(100vh - 100%));
+    right: 0;
+    width: 14.28%;
+    background-image: linear-gradient(-45deg, #255760 0%, #00d5fe 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+
+.sabbath-column:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-45deg, #00d5fe 0%, #255760 100%);
+    z-index: -1;
+    transition: 0.5s linear;
+    opacity: 0;
+}
+
+.sabbath-column:hover:before {
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0 0 15em 0 rgba(0, 0, 0);
+}
+
+
+/* Church Name */
+
+.church-name-logo {
+    position: absolute;
+    display: block;
+    max-width: 40vh;
+    margin: 20px 0 0 10px;
+    z-index: 5;
+}
+
+#navbar {
+    transition: .5s;
+}
+
+#navbarMobile {
+    transition: .5s;
+}
+
+
+/* --- Tite --- */
+
+#bannerTitle {
+    height: 105vh;
+}
+
+.banner h1 {
+    padding: 8px;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    color: #252525;
+    font-weight: 300;
+    cursor: default;
+    background: #f5f5f5;
+    border-radius: 50px;
+    width: 550px;
+    margin: auto;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+    opacity: 100%;
+}
+
+
+/* --- Menu Bar --- */
+
+.menuButtonMobile {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 150%;
+    align-items: center;
+    justify-content: center;
+    text-align: initial;
+    z-index: 4;
+}
+
+.menuButton {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 150%;
+    align-items: center;
+    justify-content: center;
+    text-align: initial;
+    z-index: 4;
+}
+
+.bannerWrapper {
+    place-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.bannerButton {
+    text-decoration: none;
+    color: #f5f5f5 !important;
+}
+
+.bannerWrapper .bannerButton {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #002938;
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-out;
+}
+
+.bannerWrapper .bannerButton:nth-child(1):hover {
+    width: 180px;
+}
+
+.bannerWrapper .bannerButton:nth-child(2):hover {
+    width: 205px;
+}
+
+.bannerWrapper .bannerButton:nth-child(3):hover {
+    width: 205px;
+}
+
+.bannerWrapper .bannerButton .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    background: #f5f5f5;
+    color: #252525;
+}
+
+.bannerWrapper .bannerButton:hover .icon {
+    background: #f5f5f5;
+}
+
+.bannerWrapper .bannerButton .icon i {
+    font-size: 30px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.bannerWrapper .bannerButton:hover .icon i {
+    color: #252525;
+}
+
+.bannerWrapper .bannerButton span {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 60px;
+    margin-left: 5px;
+    transition: all 0.3s ease-out;
+    color: #f5f5f5;
+}
+
+
+/* Line */
+
+.line {
+    align-items: center;
+    width: 75px;
+    border: 4px solid #002938;
+    background: #002938;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* --- Sections --- */
+
+.allSections {
+    margin: auto;
+    color: #252525;
+    background: #f5f5f5;
+    border: 50px solid #f5f5f5;
+}
+
+.resources-title h3,
+.portofolioTitle h3,
+.projectsTitle h3,
+.contactTitle h3 {
+    text-align: center;
+    padding: 8px;
+    color: #f5f5f5;
+    font-size: 30px;
+    font-weight: 300;
+    cursor: default;
+    background-color: #002938;
+    border-radius: 50px;
+    width: 230px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 75px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Resources Section */
+
+.col-sm-12,
+.col-md-6 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.resource-download-button {
+    padding: 3%;
+    color: #252525;
+    display: flex;
+    justify-content: center;
+    transition: .4s;
+}
+
+.resource-download-button:hover {
+    color: #f5f5f5;
+    transition: .4s;
+}
+
+.resource-download-bg {
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    margin: 10px 0 10px 0;
+    transition: .4s;
+    border: 3pt solid #002938;
+}
+
+.resource-download-bg:hover {
+    background-color: #002938;
+    transition: .4s;
+    border: 3pt solid #f5f5f5;
+}
+
+.resource-category-title {
+    overflow-wrap: break-word;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    line-height: 40px;
+    word-break: keep-all;
+    font-weight: 100;
+    font-size: 45px;
+}
+
+
+/* Portofolio Section */
+
+.column {
+    position: relative;
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    display: inline;
+    margin: auto;
+}
+
+.row.marginBottom,
+.row.marginMiddle,
+.row.marginTop {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    overflow: hidden;
+}
+
+
+/* Images + Categories */
+
+.imageOverlay {
+    display: inline;
+    color: #f5f5f5;
+    position: absolute;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    text-align: center;
+}
+
+.categoryRight {
+    color: #f5f5f5;
+    background: #161616;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+    border-radius: 0 50px 50px 0;
+    transition: all 0.3s ease-out;
+}
+
+.categoryRight:hover {
+    background: #060606;
+    transition: all 0.3s ease-out;
+}
+
+.categoryRight:hover .underlineMagical {
+    background-size: 100% 100%;
+}
+
+.imageLeft {
+    width: 100%;
+    border-radius: 50px 0 0 50px;
+    transition: all 0.3s ease-out;
+}
+
+.marginBottom {
+    margin-bottom: 30px;
+}
+
+.marginTop {
+    margin-top: 50px;
+}
+
+.categoryLeft {
+    color: #f5f5f5;
+    background: #161616;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+    border-radius: 50px 0 0 50px;
+    transition: all 0.3s ease-out;
+}
+
+.categoryLeft:hover {
+    background: #060606;
+    transition: all 0.3s ease-out;
+}
+
+.categoryLeft:hover .underlineMagical {
+    background-size: 100% 100%;
+}
+
+.imageRight {
+    width: 100%;
+    border-radius: 0 50px 50px 0;
+    transition: all 0.3s ease-out;
+}
+
+.rectangle {
+    width: 100%;
+    padding-bottom: 125%;
+}
+
+.categoryText {
+    padding: 8px;
+    text-align: center;
+}
+
+.categoryLink {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.underlineMagical {
+    background-image: linear-gradient(120deg, #262626 0%, #565656 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    border-radius: 50px;
+    padding: 5px 20px 5px 20px;
+    transition: all 0.3s ease-out;
+}
+
+.underlineMagical:hover {
+    background-image: linear-gradient(120deg, #979D57 0%, #3C5830 100%);
+    transition: all 0.3s ease-out;
+}
+
+.column .icon {
+    color: #f5f5f5;
+    opacity: 1;
+}
+
+.rectangle .column .icon:hover {
+    opacity: 1;
+}
+
+
+/* Projects Section */
+
+.projects p {
+    text-indent: 3rem;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 26px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: justify;
+}
+
+
+/* Contact Section */
+
+.contact p {
+    font-size: 15px;
+    line-height: 26px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: center;
+    margin: auto;
+    width: 75%;
+}
+
+.contactLinks {
+    cursor: pointer;
+    text-decoration: #f5f5f5;
+    color: #f5f5f5;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.contactLinks:hover {
+    text-decoration: underline;
+}
+
+
+/* --- Footer --- */
+
+footer {
+    position: sticky;
+    -webkit-position: sticky;
+    background-color: #002938;
+    text-align: initial;
+    color: #f5f5f5;
+}
+
+
+/* --- Social Media Buttons --- */
+
+.wrapper {
+    display: flex;
+    place-content: center;
+    padding: 25px;
+}
+
+.button {
+    text-decoration: none;
+    color: #f5f5f5 !important;
+}
+
+.wrapper .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #002938;
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover {
+    width: 165px;
+}
+
+.wrapper .button:nth-child(2):hover {
+    width: 215px;
+}
+
+.wrapper .button:nth-child(3):hover {
+    width: 225px;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    background: #f5f5f5;
+    color: #252525;
+}
+
+.wrapper .button:hover .icon {
+    background: #f5f5f5;
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+    color: #252525;
+}
+
+.wrapper .button span {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+    color: #f5f5f5;
+}
+
+
+/* --- Copyright --- */
+
+.copyright {
+    cursor: pointer;
+    text-decoration: #f5f5f5;
+    color: #f5f5f5;
+}
+
+.copyright:hover {
+    text-decoration: underline;
+}
+
+
+/* Scroll Up Button */
+
+.scrollToTopBtn {
+    display: flex;
+    position: fixed;
+    width: 150%;
+    align-items: center;
+    justify-content: center;
+    text-align: initial;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 50%;
+    color: #252525;
+    cursor: pointer;
+    font-size: 25px;
+    line-height: 48px;
+    width: 48px;
+    bottom: 55px;
+    right: 20%;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all .5s ease;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.showBtn {
+    opacity: 0.9;
+    transform: translateY(0px);
+}
+
+.scrollToTopBtn:focus {
+    outline: none;
+}
+
+
+/* --- Media Queries ---- */
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 576px) {
+    .closebtn {
+        text-align: left;
+    }
+    .symbol {
+        max-width: 90%;
+    }
+    .banner h1 {
+        font-size: 20px;
+        width: 250px;
+    }
+    .bannerButton {
+        font-size: 25px;
+    }
+    .overlay h4 {
+        font-size: 25px;
+    }
+    .overlay-content {
+        top: 15%;
+    }
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+    .categoryRight {
+        font-size: 16px;
+        border-radius: 0 30px 30px 0;
+    }
+    .categoryLeft {
+        font-size: 16px;
+        border-radius: 30px 0 0 30px;
+    }
+    .imageLeft {
+        border-radius: 30px 0 0 30px;
+    }
+    .imageRight {
+        border-radius: 0 30px 30px 0;
+    }
+    .allSections {
+        border-radius: 0;
+    }
+    .resource-category-title {
+        font-size: 25px;
+    }
+    .wrapper .button:nth-child(1):hover {
+        width: 60px;
+    }
+    .wrapper .button:nth-child(2):hover {
+        width: 60px;
+    }
+    .wrapper .button:nth-child(3):hover {
+        width: 60px;
+    }
+    .banner {
+        background-attachment: scroll;
+    }
+    .church-name-logo {
+        width: 60%;
+        left: 0%;
+    }
+    .menuButton {
+        visibility: hidden;
+    }
+    .bannerWrapper .bannerButton {
+        height: 50px;
+        width: 50px;
+    }
+    .bannerWrapper .bannerButton .icon {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    }
+    .bannerWrapper .bannerButton .icon i {
+        line-height: 52px;
+    }
+    .menuButtonMobile .bannerWrapper .bannerButton:hover {
+        width: 50px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .banner h1 {
+        font-size: 30px;
+        width: 350px;
+    }
+    .symbol {
+        max-width: 70%;
+    }
+    .bannerButton {
+        font-size: 30px;
+    }
+    .overlay h4 {
+        font-size: 30px;
+    }
+    .overlay-content {
+        top: 15%;
+    }
+    .overlay a {
+        font-size: 25px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .allSections {
+        border-radius: 0;
+    }
+    .aboutName {
+        font-size: 45px;
+    }
+    .banner {
+        background-attachment: scroll;
+    }
+    .menuButtonMobile {
+        visibility: hidden;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    body {
+        text-align: initial;
+    }
+    .banner h1 {
+        font-size: 50px;
+        width: 550px;
+    }
+    .overlay h4 {
+        font-size: 35px;
+    }
+    .overlay-content {
+        top: 25%;
+    }
+    .overlay a {
+        font-size: 30px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .allSections {
+        border-radius: 40px 40px 0 0;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .banner h1 {
+        font-size: 50px;
+    }
+    .overlay h4 {
+        font-size: 40px;
+    }
+    .overlay a {
+        font-size: 36px
+    }
+    .overlay .closebtn {
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    .church-name-logo {
+        left: 13%;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .banner h1 {
+        font-size: 50px;
+    }
+    .banner {
+        background-attachment: fixed;
+    }
+    .symbol {
+        max-width: 40%;
+    }
+}
