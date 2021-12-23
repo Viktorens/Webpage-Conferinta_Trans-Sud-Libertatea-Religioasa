@@ -1,1 +1,9 @@
-# Pagina web al departartamentului "Libertatea Reliogioasă" al conferinței Transilvania Sud
+# Departartamentul "Libertatea Reliogioasă" - Conferinței Transilvania Sud
+
+Pagina web oficială a departamentului "Libertatea Religioasă" din cadrul Conferinței Transilvania Sud
+
+## Contact
+
+Email: transilvaniasud@adventist.ro
+[Website](https://adventistsud.ro)
+[Facebook](https://www.facebook.com/adventistsud)
