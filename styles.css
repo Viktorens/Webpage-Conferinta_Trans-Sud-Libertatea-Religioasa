@@ -342,10 +342,13 @@ p {
 }
 
 .resources-title h3,
+.about-title h3,
 .portofolioTitle h3,
 .projectsTitle h3,
 .contactTitle h3 {
     text-align: center;
+    overflow: visible;
+    /* white-space: nowrap; */
     padding: 8px;
     color: #f5f5f5;
     font-size: 30px;
@@ -360,15 +363,39 @@ p {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
-
-/* Resources Section */
-
 .col-sm-12,
 .col-md-6 {
     display: grid;
     align-items: center;
     justify-content: center;
 }
+
+.about-subtitle,
+.resource-category-title {
+    overflow-wrap: break-word;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    line-height: 40px;
+    word-break: keep-all;
+    font-weight: 100;
+    font-size: 45px;
+}
+
+
+/* About Section */
+
+.about p:nth-child(2) {
+    text-indent: 1.5rem;
+    font-size: 15px;
+    line-height: 26px;
+    word-wrap: break-word;
+    hyphens: auto;
+    text-align: justify;
+    margin: 20px 0 20px 0;
+}
+
+
+/* Resources Section */
 
 .resource-download-button {
     padding: 3%;
@@ -405,16 +432,6 @@ p {
     background-color: #002938;
     transition: .4s;
     border: 3pt solid #f5f5f5;
-}
-
-.resource-category-title {
-    overflow-wrap: break-word;
-    text-align: center;
-    margin: 40px 0 20px 0;
-    line-height: 40px;
-    word-break: keep-all;
-    font-weight: 100;
-    font-size: 45px;
 }
 
 .resource-download-icon {
@@ -816,7 +833,8 @@ footer {
     .allSections {
         border-radius: 0;
     }
-    .resource-category-title {
+    .resource-category-title,
+    .about-subtitle {
         font-size: 25px;
     }
     .wrapper .button:nth-child(1):hover {
