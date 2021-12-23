@@ -6,4 +6,4 @@ Pagina web oficială a departamentului "Libertatea Religioasă" din cadrul Confe
 
 [Website](https://adventistsud.ro)  
 [Facebook](https://www.facebook.com/adventistsud)  
-[Email](mailto: transilvaniasud@adventist.ro)  
+Email: transilvaniasud@adventist.ro  
