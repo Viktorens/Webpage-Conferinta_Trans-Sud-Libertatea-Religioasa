@@ -145,8 +145,8 @@ p {
     font-size: 10px;
     justify-content: center;
     text-align: center;
-    position: fixed;
-    bottom: 2vh;
+    /* position: fixed; */
+    /* bottom: 2vh; */
     transition: 0.3s;
 }
 
