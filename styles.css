@@ -138,6 +138,17 @@ p {
     width: 0%;
 }
 
+.overlay-content span {
+    color: #f5f5f5;
+    display: flex;
+    width: 65vw;
+    font-size: 10px;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    bottom: 2vh;
+}
+
 
 /* Sabbath Column */
 
