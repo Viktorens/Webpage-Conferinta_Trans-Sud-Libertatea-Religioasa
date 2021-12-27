@@ -274,7 +274,7 @@ p {
 }
 
 .bannerWrapper .bannerButton:nth-child(2):hover {
-    width: 7.25em;
+    width: 8.7em;
 }
 
 .bannerWrapper .bannerButton:nth-child(3):hover {
@@ -838,13 +838,13 @@ footer {
         font-size: 25px;
     }
     .wrapper .button:nth-child(1):hover {
-        width: 60px;
+        width: 4.2em;
     }
     .wrapper .button:nth-child(2):hover {
-        width: 60px;
+        width: 4.2em;
     }
     .wrapper .button:nth-child(3):hover {
-        width: 60px;
+        width: 4.2em;
     }
     .banner {
         background-attachment: scroll;
@@ -855,6 +855,9 @@ footer {
     }
     .menuButton {
         visibility: hidden;
+    }
+    .bannerWrapper .bannerButton:nth-child(1):hover {
+        width: 2.2em;
     }
 }
 
@@ -901,6 +904,18 @@ footer {
     .menuButton {
         visibility: hidden;
     }
+    .bannerWrapper .bannerButton:nth-child(1):hover {
+        width: 2.2em;
+    }
+    .wrapper .button:nth-child(1):hover {
+        width: 4.2em;
+    }
+    .wrapper .button:nth-child(2):hover {
+        width: 4.2em;
+    }
+    .wrapper .button:nth-child(3):hover {
+        width: 4.2em;
+    }
 }
 
 
@@ -930,6 +945,18 @@ footer {
     }
     .allSections {
         border-radius: 40px 40px 0 0;
+    }
+    .bannerWrapper .bannerButton:nth-child(1):hover {
+        width: 6.5em;
+    }
+    .wrapper .button:nth-child(1):hover {
+        width: 12.5em;
+    }
+    .wrapper .button:nth-child(2):hover {
+        width: 16.5em;
+    }
+    .wrapper .button:nth-child(3):hover {
+        width: 17em;
     }
 }
 
