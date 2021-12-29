@@ -799,6 +799,10 @@ footer {
     color: #4267B2;
 }
 
+.instagram-gradient {
+    display: inline-block;
+}
+
 @supports (-webkit-background-clip: text) or (background-clip: text) {
     .icon-instagram {
         display: inline-block;
@@ -806,7 +810,7 @@ footer {
         filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
         -webkit-background-clip: text;
         background-clip: text;
-        color: rgba (0, 0, 0, 0.0001);
+        -webkit-text-fill-color: transparent
     }
 }
 
