@@ -799,13 +799,13 @@ footer {
     color: #4267B2;
 }
 
-.instagram-gradient {
-    display: inline-block;
+.icon-instragram {
+    display: inline;
 }
 
 @supports (-webkit-background-clip: text) or (background-clip: text) {
     .bi-instagram {
-        display: inline-block;
+        display: inline;
         background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
         filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
         -webkit-background-clip: text;
