@@ -754,6 +754,7 @@ footer {
 /* --- Copyright --- */
 
 .copyright {
+    display: flex;
     cursor: pointer;
     text-decoration: #f5f5f5;
     color: #f5f5f5;
@@ -870,6 +871,17 @@ footer {
     }
     .bannerWrapper .bannerButton:nth-child(1):hover {
         width: 2.2em;
+    }
+    .copyright {
+        text-align: center;
+        justify-content: center;
+    }
+    footer .col-md-6,
+    footer .col-sm-12 {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
     }
 }
 
