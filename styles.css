@@ -812,6 +812,8 @@ footer {
     /* Use the text as a mask for the background. */
     /* This will show the gradient as a text color rather than element bg. */
     background-clip: text;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
