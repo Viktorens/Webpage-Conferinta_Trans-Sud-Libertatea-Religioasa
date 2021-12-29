@@ -803,7 +803,8 @@ footer {
     display: inline;
 }
 
-@supports (-webkit-background-clip: text) or (background-clip: text) {
+
+/* @supports (-webkit-background-clip: text) or (background-clip: text) {
     .bi-instagram {
         display: inline;
         background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -812,6 +813,17 @@ footer {
         background-clip: text;
         -webkit-text-fill-color: transparent
     }
+} */
+
+.icon-instagram h3 {
+    background: linear-gradient(to right, #fc5404 20%, #f9b208 70%, #fc5404 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-instagram h3 {
+    display: inline;
 }
 
 .social-media-button:hover {
