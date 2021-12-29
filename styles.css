@@ -806,7 +806,7 @@ footer {
         filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
         -webkit-background-clip: text;
         background-clip: text;
-        color: transparent;
+        color: rgba (0, 0, 0, 0.0001);
     }
 }
 
