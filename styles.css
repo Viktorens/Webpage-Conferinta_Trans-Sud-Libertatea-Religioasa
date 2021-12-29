@@ -799,26 +799,15 @@ footer {
     color: #4267B2;
 }
 
-.icon-instagram {
-    display: inline !important;
-    /* Fallback: Set a background color. */
-    /* background: #f09433; */
-    /* background-image: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); */
-    /* background-image: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); */
-    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-    /* Set the background size and repeat properties. */
-    /* background-size: 100%; */
-    /* background-repeat: repeat; */
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
-    background-clip: text;
-    /* box-decoration-break: clone; */
-    /* -webkit-box-decoration-break: clone; */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+    .icon-instagram {
+        background: #f09433;
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
 }
 
 .social-media-button:hover {
