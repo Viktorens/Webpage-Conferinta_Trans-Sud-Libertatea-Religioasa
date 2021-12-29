@@ -469,7 +469,7 @@ p {
     float: left;
     width: 50%;
     overflow: hidden;
-    display: inline;
+    /* display: inline; */
     margin: auto;
 }
 
@@ -491,7 +491,7 @@ p {
 /* Images + Categories */
 
 .imageOverlay {
-    display: inline;
+    /* display: inline; */
     color: #f5f5f5;
     position: absolute;
     padding: 5px;
@@ -698,7 +698,7 @@ footer {
 }
 
 .wrapper .button {
-    display: inline-block;
+    /* display: inline-block; */
     height: 4.2em;
     width: 4.2em;
     margin: 0 5px;
@@ -724,7 +724,7 @@ footer {
 }
 
 .wrapper .button .icon {
-    display: inline-block;
+    /* display: inline-block; */
     height: 4.2em;
     width: 4.2em;
     text-align: center;
