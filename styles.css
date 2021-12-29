@@ -815,7 +815,7 @@ footer {
     display: inline;
 }
 
-.social-media-button:hover {
+.social-media-button span:hover {
     text-decoration: underline;
 }
 
