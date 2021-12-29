@@ -822,7 +822,7 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
-.icon-instagram h3 .bi {
+.icon-instagram i:before {
     display: inline;
 }
 
