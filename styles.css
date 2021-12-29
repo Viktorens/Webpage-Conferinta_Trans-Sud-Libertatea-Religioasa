@@ -809,6 +809,10 @@ footer {
     }
 }
 
+.social-media-button span {
+    display: inline;
+}
+
 .social-media-button:hover {
     text-decoration: underline;
 }
