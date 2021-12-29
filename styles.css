@@ -816,9 +816,9 @@ footer {
     /* box-decoration-break: clone; */
     /* -webkit-box-decoration-break: clone; */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    /* -moz-text-fill-color: transparent; */
 }
 
 .social-media-button:hover {
