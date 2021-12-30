@@ -762,6 +762,7 @@ footer .col-md-12 {
 }
 
 .useful-links-icon {
+    display: flex;
     margin: 4.5px 15px 0px 0px;
     font-size: 8px;
 }
