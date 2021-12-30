@@ -761,9 +761,9 @@ footer .col-md-12 {
     text-decoration: underline;
 }
 
-.useful-links-icon {
+.useful-links-icon i {
     display: flex;
-    margin: 4.5px 15px 0px 0px;
+    margin: 7px 15px 0px 0px;
     font-size: 8px;
 }
 
