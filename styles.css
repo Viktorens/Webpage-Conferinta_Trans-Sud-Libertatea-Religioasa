@@ -904,6 +904,9 @@ footer .col-md-12 {
         justify-content: center;
         padding-left: 0;
     }
+    .useful-links-button {
+        padding-bottom: 30px;
+    }
 }
 
 
