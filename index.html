@@ -24,25 +24,27 @@
 
     <body>
         <!-- The menu overlay -->
-        <div id="myNav" class="overlay">
+        <div id="my-nav" class="overlay">
             <div class="overlay-content">
+                <!-- Close Button -->
                 <div class="close-btn-background">
                     <a href="javascript:void(0)" class="close-btn" onclick="closeNav(); enableScrolling()">&times;</a>
                 </div>
+                <!-- Menu Buttons -->
                 <ul class="overlay-buttons">
-                    <div class="overlay-link-list">
-                        <li class="overlay-item">
-                            <a class="overlay-link" href="https://www.libertateareligioasasud.ro"
-                                onclick="closeNav(); enableScrolling()">Acasă</a>
-                        </li>
-                        <li class="overlay-item">
-                            <a class="overlay-link" href="#" onclick="closeNav(); enableScrolling()">Evenimente</a>
-                        </li>
-                        <li class="overlay-item">
-                            <a class="overlay-link" href="#" onclick="closeNav(); enableScrolling()">Contact</a>
-                        </li>
-                    </div>
+                    <li class="overlay-item">
+                        <a class="overlay-link" href="https://www.libertateareligioasasud.ro"
+                            onclick="closeNav(); enableScrolling()">Acasă</a>
+                    </li>
+                    <li class="overlay-item">
+                        <a class="overlay-link" href="#" onclick="closeNav(); enableScrolling()">Evenimente</a>
+                    </li>
+                    <li class="overlay-item">
+                        <a class="overlay-link" href="#" onclick="closeNav(); enableScrolling()">Contact</a>
+                    </li>
+                    <!-- Church Symbol -->
                     <img class="church-logo" src="./img/20211024_biserica_adventista_LR_TransSud_Symbol.svg" alt="Logo">
+                    <!-- Paragraph -->
                     <p class="overlay-p">Biserica Adventistă de Ziua a Șaptea România<br>Conferința Transilvania Sud
                     </p>
                 </ul>
@@ -57,41 +59,43 @@
         </a>
         <!-- Sabbath Column -->
         <a class="sabbath-column" id="sabbath-column-button" onclick="openNav(); disableScrolling()">
-            <img class="symbol" src="./img/20211024_biserica_adventista_LR_TransSud_Symbol.svg" alt="Symbol">
+            <img class="symbol" src="./img/20211024_biserica_adventista_LR_TransSud_Symbol.svg" alt="Logo">
         </a>
         <!-- Menu Bar -->
-        <div class="menuButtonMobile" id="navbarMobile">
-            <div class="bannerWrapper">
-                <a class="bannerButton" onclick="openNav(); disableScrolling()">
+        <div class="menubutton-mobile" id="navbar-mobile">
+            <div class="banner-wrapper">
+                <a class="banner-button" onclick="openNav(); disableScrolling()">
                     <div class="icon"><i class="bi bi-list"></i></div>
                     <span>Meniu</span>
                 </a>
             </div>
         </div>
-        <div class="menuButton show-background" id="navbar">
-            <div class="bannerWrapper">
-                <a class="bannerButton" href="https://www.libertateareligioasasud.ro">
+        <div class="menubutton show-background" id="navbar">
+            <div class="banner-wrapper">
+                <a class="banner-button" href="https://www.libertateareligioasasud.ro">
                     <div class="icon"><i class="bi bi-house"></i></div>
                     <span>Acasă</span>
                 </a>
-                <a class="bannerButton" href="#">
+                <a class="banner-button" href="#">
                     <div class="icon"><i class="bi bi-file-earmark-arrow-down"></i></div>
                     <span>Evenimente</span>
                 </a>
-                <a class="bannerButton" href="#">
+                <a class="banner-button" href="#">
                     <div class="icon"><i class="bi bi-person-circle"></i></div>
                     <span>Contact</span>
                 </a>
             </div>
         </div>
         <!-- Scroll To Top Button -->
-        <button class="scrollToTopBtn" id="scrollToTopButton"><i class="bi bi-chevron-bar-up"></i></button>
+        <button type="button" class="scroll-to-top-btn" id="scroll-to-top-btn">
+            <i class="bi bi-chevron-bar-up"></i>
+        </button>
         <!-- Main -->
         <main id="main" class="no-blur-filter">
-            <div id="bannerTitle" class="banner">
+            <div id="banner-title" class="banner">
                 <h1>Departamentul Libertatea Religioasă</h1>
             </div>
-            <section class="allSections">
+            <section class="all-sections">
                 <div class="line-container">
                     <div class="line-short"></div>
                     <div class="line-long"></div>
@@ -102,7 +106,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
-                            <img class="imageAbout" src="img/pigeon.jpg">
+                            <img class="image-about" src="img/pigeon.jpg" alt="Pigeon">
                         </div>
                         <div class="col-lg-6 col-md-12">
                             <p class="about-subtitle">Declaraţie</p>
@@ -246,78 +250,7 @@
                     </div>
                 </section>
 
-                <!-- <section class="portofolio">
-                <div id="portofoliu" class="portofolioTitle">
-                    <h3>Portofoliu</h3>
-                </div>
-                <div class="row marginBottom">
-                    <div class="column">
-                        <img class="imageLeft" src="img/casual.jpg">
-                    </div>
-                    <div class="column">
-                        <div class="rectangle">
-                            <div class="categoryRight">
-                                <a class="categoryLink" href="https://victorgreavu.pixieset.com/casual/" target="_blank">
-                                    <div class="categoryText underlineMagical">CASUAL</div>
-                                </a>
-                                <div class="icon"><i class="bi bi-arrow-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row marginMiddle">
-                    <div class="column">
-                        <div class="rectangle">
-                            <div class="categoryLeft">
-                                <a class="categoryLink" href="https://victorgreavu.pixieset.com/events/" target="_blank">
-                                    <div class="categoryText underlineMagical">EVENIMENTE</div>
-                                </a>
-                                <div class="icon"><i class="bi bi-arrow-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <img class="imageRight" src="img/events.jpg">
-                    </div>
-                </div>
-                <div class="row marginTop">
-                    <div class="column">
-                        <img class="imageLeft" src="img/nature.jpg">
-                    </div>
-                    <div class="column">
-                        <div class="rectangle">
-                            <div class="categoryRight">
-                                <a class="categoryLink" href="https://victorgreavu.pixieset.com/nature/" target="_blank">
-                                    <div class="categoryText underlineMagical">NATURĂ</div>
-                                </a>
-                                <div class="icon"><i class="bi bi-arrow-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-                <!-- TODO -->
-                <!-- <section class="projects">
-                <div id="proiecte" class="projectsTitle">
-                    <h3>Proiecte</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac felis ut mauris molestie sollicitudin. Suspendisse eget ex cursus, iaculis nunc ac, fringilla mi. Nam fringilla purus et bibendum cursus. Etiam rhoncus at metus sit amet
-                    laoreet. Integer at tortor sit amet quam faucibus consequat in eget velit. Nulla hendrerit eu ligula at blandit. Sed consequat aliquet nisl eu dignissim. Sed laoreet et nulla ut consequat. Nulla mollis fermentum massa ut gravida. Sed
-                    diam dolor, lobortis a interdum a, sollicitudin quis elit. Morbi porttitor ornare iaculis. Praesent tempor elementum ante non pretium. Vivamus sagittis non massa non molestie. Suspendisse quis ligula posuere, porttitor mauris fermentum,
-                    tincidunt felis. Ut non placerat purus. </p>
-            </section> -->
-                <!-- <section class="contact">
-                <div id="contact" class="contactTitle">
-                    <h3>Contact</h3>
-                </div>
-                <p>Fie că este vorba despre un eveniment important din viața ta sau doar o simplă plimbare în natură, păstrează aceste amintiri și experiențe unice alături de tine.</p>
-                <a class="contactLinks" href="mailto: viktorens10mc@gmail.com">viktorens10mc@gmail.com</a>
-                <a class="contactLinks" href="tel: +40743188886">+40 743 188 886</a>
-            </section> -->
-
             </section>
-
             <!-- Footer -->
             <footer>
                 <div class="footer-bg">
@@ -354,8 +287,7 @@
                     </div>
                     <!-- Copyright -->
                     <div class="copyright">
-                        <a class="copyright" href="https://adventistsud.ro" target="_blank"> &copy 2022 Biserica
-                            Adventistă de Ziua a Șaptea România | Conferința Transilvania Sud</a>
+                        <a class="copyright" id="copyright" href="https://adventistsud.ro" target="_blank"></a>
                     </div>
                 </div>
             </footer>

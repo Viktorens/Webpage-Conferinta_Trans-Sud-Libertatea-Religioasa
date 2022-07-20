@@ -219,14 +219,14 @@ p {
     transition: .5s;
 }
 
-#navbarMobile {
+#navbar-mobile {
     transition: .5s;
 }
 
 
 /* --- Tite --- */
 
-#bannerTitle {
+#banner-title {
     height: 105vh;
 }
 
@@ -248,7 +248,7 @@ p {
 
 /* --- Menu Bar --- */
 
-.menuButtonMobile {
+.menubutton-mobile {
     display: flex;
     position: fixed;
     top: 0;
@@ -259,7 +259,7 @@ p {
     z-index: 4;
 }
 
-.menuButton {
+.menubutton {
     display: flex;
     position: fixed;
     top: 0;
@@ -270,18 +270,18 @@ p {
     z-index: 4;
 }
 
-.bannerWrapper {
+.banner-wrapper {
     place-content: center;
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
-.bannerButton {
+.banner-button {
     text-decoration: none;
     color: #f5f5f5 !important;
 }
 
-.bannerWrapper .bannerButton {
+.banner-wrapper .banner-button {
     display: inline-block;
     height: 2.2em;
     width: 2.2em;
@@ -295,19 +295,19 @@ p {
     transition: all 0.3s ease-out;
 }
 
-.bannerWrapper .bannerButton:nth-child(1):hover {
+.banner-wrapper .banner-button:nth-child(1):hover {
     width: 6.5em;
 }
 
-.bannerWrapper .bannerButton:nth-child(2):hover {
+.banner-wrapper .banner-button:nth-child(2):hover {
     width: 9.3em;
 }
 
-.bannerWrapper .bannerButton:nth-child(3):hover {
+.banner-wrapper .banner-button:nth-child(3):hover {
     width: 7.25em;
 }
 
-.bannerWrapper .bannerButton .icon {
+.banner-wrapper .banner-button .icon {
     display: inline-block;
     height: 2.2em;
     width: 2.2em;
@@ -319,21 +319,21 @@ p {
     color: #252525;
 }
 
-.bannerWrapper .bannerButton:hover .icon {
+.banner-wrapper .banner-button:hover .icon {
     background: #f5f5f5;
 }
 
-.bannerWrapper .bannerButton .icon i {
+.banner-wrapper .banner-button .icon i {
     font-size: 1.05em;
     line-height: 2;
     transition: all 0.3s ease-out;
 }
 
-.bannerWrapper .bannerButton:hover .icon i {
+.banner-wrapper .banner-button:hover .icon i {
     color: #252525;
 }
 
-.bannerWrapper .bannerButton span {
+.banner-wrapper .banner-button span {
     font-size: 30px;
     font-weight: 300;
     line-height: 1;
@@ -375,7 +375,7 @@ p {
 
 /* --- Sections --- */
 
-.allSections {
+.all-sections {
     margin: auto;
     color: #252525;
     background: #f5f5f5;
@@ -428,12 +428,13 @@ p {
     font-size: 15px;
     line-height: 25px;
     word-wrap: break-word;
+    -webkit-hyphens: auto;
     hyphens: auto;
     text-align: left;
     margin: 20px 0 20px 0;
 }
 
-.imageAbout {
+.image-about {
     width: 100%;
     border-radius: 50px;
     transition: all 0.3s ease-out;
@@ -652,6 +653,7 @@ p {
     line-height: 26px;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    -webkit-hyphens: auto;
     hyphens: auto;
     text-align: justify;
 }
@@ -663,6 +665,7 @@ p {
     line-height: 26px;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    -webkit-hyphens: auto;
     hyphens: auto;
     text-align: center;
     margin: auto;
@@ -751,8 +754,8 @@ footer .col-md-12 {
     background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 8px;
 }
@@ -801,37 +804,44 @@ footer .col-md-12 {
 }
 
 /* Scroll Up Button */
-
-.scrollToTopBtn {
-    display: flex;
+.scroll-to-top-btn {
+    display: inline-block;
     position: fixed;
-    width: 150%;
+    border: none;
+    color: #f5f5f5;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #002938;
+    border-radius: 50px;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
-    text-align: initial;
-    background: #002938;
-    border: none;
-    border-radius: 50%;
-    color: #f5f5f5;
-    cursor: pointer;
-    font-size: 1.8em;
-    line-height: 1.9;
-    width: 1.95em;
-    bottom: 55px;
-    right: 20%;
+    text-align: center;
+    bottom: 50px;
+    right: 1.5%;
     z-index: 100;
     opacity: 0;
     transform: translateY(150px);
     transition: all .5s ease;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
 }
 
-.showBtn {
-    opacity: 0.9;
+.scroll-to-top-btn:hover {
+    opacity: 1;
+}
+
+i.bi.bi-chevron-bar-up {
+    font-size: 1.8em;
+}
+
+.show-btn {
+    opacity: 0.75;
     transform: translateY(0px);
 }
 
-.scrollToTopBtn:focus {
+.scroll-to-top-btn:focus {
     outline: none;
 }
 
@@ -840,10 +850,6 @@ footer .col-md-12 {
 /* Extra small devices (portrait phones, less than 576px)*/
 
 @media (max-width: 576px) {
-    .closebtn {
-        text-align: left;
-    }
-
     .symbol {
         max-width: 90%;
     }
@@ -853,7 +859,7 @@ footer .col-md-12 {
         width: 250px;
     }
 
-    .bannerButton {
+    .banner-button {
         font-size: 25px;
     }
 
@@ -887,7 +893,7 @@ footer .col-md-12 {
         border-radius: 0 30px 30px 0;
     }
 
-    .allSections {
+    .all-sections {
         border-radius: 0;
         border: 20px solid #f5f5f5;
     }
@@ -906,11 +912,11 @@ footer .col-md-12 {
         left: 0%;
     }
 
-    .menuButton {
+    .menubutton {
         visibility: hidden;
     }
 
-    .bannerWrapper .bannerButton:nth-child(1):hover {
+    .banner-wrapper .banner-button:nth-child(1):hover {
         width: 2.2em;
     }
 
@@ -948,11 +954,11 @@ footer .col-md-12 {
         max-width: 70%;
     }
 
-    .bannerButton {
+    .banner-button {
         font-size: 30px;
     }
 
-    .allSections {
+    .all-sections {
         border-radius: 0;
     }
 
@@ -964,15 +970,15 @@ footer .col-md-12 {
         background-attachment: scroll;
     }
 
-    .menuButtonMobile {
+    .menubutton-mobile {
         visibility: visible;
     }
 
-    .menuButton {
+    .menubutton {
         visibility: hidden;
     }
 
-    .bannerWrapper .bannerButton:nth-child(1):hover {
+    .banner-wrapper .banner-button:nth-child(1):hover {
         width: 2.2em;
     }
 
@@ -1005,11 +1011,11 @@ footer .col-md-12 {
         width: 550px;
     }
 
-    .allSections {
+    .all-sections {
         border-radius: 40px 40px 0 0;
     }
 
-    .bannerWrapper .bannerButton:nth-child(1):hover {
+    .banner-wrapper .banner-button:nth-child(1):hover {
         width: 6.5em;
     }
 
@@ -1073,11 +1079,11 @@ footer .col-md-12 {
         max-width: 40%;
     }
 
-    .menuButtonMobile {
+    .menubutton-mobile {
         visibility: hidden;
     }
 
-    .menuButton {
+    .menubutton {
         visibility: visible;
     }
 }
