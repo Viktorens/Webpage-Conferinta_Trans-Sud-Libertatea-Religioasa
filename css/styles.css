@@ -93,12 +93,12 @@ p {
     overflow-y: scroll;
     right: 7rem;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .overlay-buttons {
     display: flex;
-    justify-content: left;
-    align-items: center;
     list-style: none;
 }
 
@@ -145,8 +145,19 @@ p {
     transition: .4s;
 }
 
+.close-btn-background:hover>.close-btn {
+    color: #255760;
+    transition: .4s;
+}
+
+
 .close-btn {
     color: whitesmoke;
+}
+
+.church-logo {
+    width: 8rem;
+    padding: 1em 0;
 }
 
 /* Sabbath Column */
