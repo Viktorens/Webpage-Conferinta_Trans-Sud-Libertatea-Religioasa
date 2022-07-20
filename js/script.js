@@ -18,7 +18,7 @@ function openNav() {
     sabbathColumn.classList.add("elements-hide");
     blurElement.classList.remove("no-blur-filter");
     blurElement.classList.add("blur-filter");
-    document.getElementById("myNav").style.width = "85.68%";
+    document.getElementById("myNav").style.right = 0;
 }
 
 
@@ -40,19 +40,15 @@ function closeNav() {
     sabbathColumn.classList.add("elements-visible");
     blurElement.classList.remove("blur-filter");
     blurElement.classList.add("no-blur-filter");
-    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.right = "-100%";
     document.getElementById("navbar").style.top = "0px";
-}
-
-function hideSabbathColumn() {
-
 }
 
 // Disable scrolling when menu is opened
 function disableScrolling() {
     var x = window.scrollX;
     var y = window.scrollY;
-    window.onscroll = function() { window.scrollTo(x, y); };
+    window.onscroll = function () { window.scrollTo(x, y); };
 }
 
 

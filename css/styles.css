@@ -24,7 +24,6 @@ p {
     width: 85.72%;
 }
 
-
 /* Show/Hide Elements */
 
 .elements-hide {
@@ -36,7 +35,6 @@ p {
     transition: 0.5s;
     opacity: 100%;
 }
-
 
 /* Gradient */
 
@@ -50,7 +48,6 @@ p {
     --gradient-color-4: #00d5f3;
     z-index: -2;
 }
-
 
 /* Add blur */
 
@@ -70,46 +67,40 @@ p {
     filter: none;
 }
 
-
 /* Menu Overlay */
 
 .overlay {
-    height: 100vh;
-    width: 0;
     position: fixed;
-    z-index: 6;
-    right: 0;
     top: 0;
+    right: -100%;
+    z-index: 6;
+    padding: 0 1rem 1rem;
+    width: 85.68%;
+    height: 100%;
     background-color: rgba(0, 127, 152, 0.75);
-    overflow-x: hidden;
-    transition: 0.5s;
     border-radius: 4vh 0 0 4vh;
-    box-shadow: 0 0 15em 0 rgba(0, 0, 0);
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    transition: right .3s ease-in-out;
 }
-
 
 /* Position the content inside the overlay */
 
 .overlay-content {
-    position: relative;
-    max-width: 0%;
-    text-align: left;
-    margin-top: 30px;
-    left: 7vh;
+    height: 100%;
+    overflow-y: scroll;
+    right: 7rem;
+    display: flex;
 }
 
-
-/* Title of overlay */
-
-.overlay-content h4 {
-    padding: 8px;
-    text-decoration: none;
-    color: #f5f5f5;
-    display: block;
-    /* Display block instead of inline */
-    margin: 0;
+.overlay-buttons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
 }
-
 
 /* The navigation links inside the overlay */
 
@@ -119,10 +110,8 @@ p {
     color: #f5f5f5;
     display: block;
     transition: 0.3s;
+    font-size: 40px
 }
-
-
-/* When you mouse over the navigation links, change their color */
 
 .overlay a:hover,
 .overlay a:focus {
@@ -132,12 +121,25 @@ p {
 
 /* Position the close button (top right corner) */
 
-.overlay .closebtn {
+.close-btn-background {
     position: absolute;
-    left: 7vh;
-    width: 0%;
+    top: 1rem;
+    left: -12%;
+    color: #f5f5f5;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgb(0, 127, 152);
+    line-height: 2.8rem;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
 }
 
+.close-btn-background:hover {
+    background-color: whitesmoke;
+    transition: .4s;
+}
 
 /* Sabbath Column */
 
@@ -175,7 +177,6 @@ p {
     cursor: pointer;
     box-shadow: 0 0 15em 0 rgba(0, 0, 0);
 }
-
 
 /* Church Name */
 
@@ -217,7 +218,6 @@ p {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
     opacity: 100%;
 }
-
 
 /* --- Menu Bar --- */
 
@@ -315,7 +315,6 @@ p {
     color: #f5f5f5;
 }
 
-
 /* Line */
 
 .line-container {
@@ -346,7 +345,6 @@ p {
     margin-top: 0px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
 }
-
 
 /* --- Sections --- */
 
@@ -396,7 +394,6 @@ p {
     font-size: 45px;
 }
 
-
 /* About Section */
 
 .about p:nth-child(2) {
@@ -414,7 +411,6 @@ p {
     border-radius: 50px;
     transition: all 0.3s ease-out;
 }
-
 
 /* Resources Section */
 
@@ -460,7 +456,6 @@ p {
     font-size: 25px;
 }
 
-
 /* Portofolio Section */
 
 .column {
@@ -485,7 +480,6 @@ p {
     display: table;
     overflow: hidden;
 }
-
 
 /* Images + Categories */
 
@@ -622,7 +616,6 @@ p {
     opacity: 1;
 }
 
-
 /* Projects Section */
 
 .projects p {
@@ -635,7 +628,6 @@ p {
     hyphens: auto;
     text-align: justify;
 }
-
 
 /* Contact Section */
 
@@ -663,7 +655,6 @@ p {
     text-decoration: underline;
 }
 
-
 /* --- Footer --- */
 
 footer {
@@ -689,7 +680,6 @@ footer .col-md-12 {
     justify-content: left;
     padding-left: 14.28%;
 }
-
 
 /* --- Social Media Buttons --- */
 
@@ -733,7 +723,7 @@ footer .col-md-12 {
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -747,7 +737,6 @@ footer .col-md-12 {
 .social-media-button span:hover {
     text-decoration: underline;
 }
-
 
 /* Useful Links */
 
@@ -784,7 +773,6 @@ footer .col-md-12 {
     text-decoration: underline;
 }
 
-
 /* Scroll Up Button */
 
 .scrollToTopBtn {
@@ -820,9 +808,7 @@ footer .col-md-12 {
     outline: none;
 }
 
-
 /* --- Media Queries ---- */
-
 
 /* Extra small devices (portrait phones, less than 576px)*/
 
@@ -830,74 +816,92 @@ footer .col-md-12 {
     .closebtn {
         text-align: left;
     }
+
     .symbol {
         max-width: 90%;
     }
+
     .banner h1 {
         font-size: 20px;
         width: 250px;
     }
+
     .bannerButton {
         font-size: 25px;
     }
-    .overlay h4 {
-        font-size: 25px;
-    }
-    .overlay-content {
-        top: 15%;
-    }
+
     .overlay a {
-        font-size: 20px
+        font-size: 30px
     }
+
     .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+        font-size: 45px;
     }
+
+    .close-btn-background {
+        left: -14%;
+        width: 3rem;
+        height: 3rem;
+        line-height: 1.8rem;
+    }
+
     .copyright {
         font-size: 12px;
     }
+
     .categoryRight {
         font-size: 16px;
         border-radius: 0 30px 30px 0;
     }
+
     .categoryLeft {
         font-size: 16px;
         border-radius: 30px 0 0 30px;
     }
+
     .imageLeft {
         border-radius: 30px 0 0 30px;
     }
+
     .imageRight {
         border-radius: 0 30px 30px 0;
     }
+
     .allSections {
         border-radius: 0;
     }
+
     .resource-category-title,
     .about-subtitle {
         font-size: 25px;
     }
+
     .banner {
         background-attachment: scroll;
     }
+
     .church-name-logo {
         width: 60%;
         left: 0%;
     }
+
     .menuButton {
         visibility: hidden;
     }
+
     .bannerWrapper .bannerButton:nth-child(1):hover {
         width: 2.2em;
     }
+
     .copyright {
         text-align: center;
         justify-content: center;
     }
+
     .social-media-button {
         justify-content: center;
     }
+
     footer .col-bg-6,
     footer .col-md-12 {
         display: grid;
@@ -905,11 +909,11 @@ footer .col-md-12 {
         justify-content: center;
         padding-left: 0;
     }
+
     .useful-links-button {
         padding-bottom: 30px;
     }
 }
-
 
 /* Small devices (landscape phones, 576px and up) */
 
@@ -918,47 +922,43 @@ footer .col-md-12 {
         font-size: 30px;
         width: 350px;
     }
+
     .symbol {
         max-width: 70%;
     }
+
     .bannerButton {
         font-size: 30px;
     }
-    .overlay h4 {
-        font-size: 30px;
-    }
-    .overlay-content {
-        top: 15%;
-    }
-    .overlay a {
-        font-size: 25px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
+
     .allSections {
         border-radius: 0;
     }
+
     .aboutName {
         font-size: 45px;
     }
+
     .banner {
         background-attachment: scroll;
     }
+
     .menuButtonMobile {
         visibility: visible;
     }
+
     .menuButton {
         visibility: hidden;
     }
+
     .bannerWrapper .bannerButton:nth-child(1):hover {
         width: 2.2em;
     }
+
     .social-media-button {
         justify-content: center;
     }
+
     footer .col-bg-6,
     footer .col-md-12 {
         display: grid;
@@ -966,11 +966,11 @@ footer .col-md-12 {
         justify-content: center;
         padding-left: 0;
     }
+
     .useful-links-button {
         padding-bottom: 30px;
     }
 }
-
 
 /* Medium devices (tablets, 768px and up) */
 
@@ -978,33 +978,24 @@ footer .col-md-12 {
     body {
         text-align: initial;
     }
+
     .banner h1 {
         font-size: 50px;
         width: 550px;
     }
-    .overlay h4 {
-        font-size: 35px;
-    }
-    .overlay-content {
-        top: 25%;
-    }
-    .overlay a {
-        font-size: 30px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
+
     .allSections {
         border-radius: 40px 40px 0 0;
     }
+
     .bannerWrapper .bannerButton:nth-child(1):hover {
         width: 6.5em;
     }
+
     .social-media-button {
         justify-content: center;
     }
+
     footer .col-bg-6,
     footer .col-md-12 {
         display: grid;
@@ -1012,11 +1003,11 @@ footer .col-md-12 {
         justify-content: center;
         padding-left: 0;
     }
+
     .useful-links-button {
         padding-bottom: 30px;
     }
 }
-
 
 /* Large devices (desktops, 992px and up) */
 
@@ -1024,23 +1015,15 @@ footer .col-md-12 {
     .banner h1 {
         font-size: 50px;
     }
-    .overlay h4 {
-        font-size: 40px;
-    }
-    .overlay a {
-        font-size: 36px
-    }
-    .overlay .closebtn {
-        top: 20px;
-        right: 45px;
-        font-size: 60px;
-    }
+
     .church-name-logo {
         left: 13%;
     }
+
     .social-media-button {
         justify-content: left;
     }
+
     footer .col-bg-6,
     footer .col-md-12 {
         display: grid;
@@ -1048,11 +1031,11 @@ footer .col-md-12 {
         justify-content: left;
         padding-left: 14.28%;
     }
+
     .useful-links-button {
         padding-bottom: 15px;
     }
 }
-
 
 /* Extra large devices (large desktops, 1200px and up) */
 
@@ -1060,15 +1043,19 @@ footer .col-md-12 {
     .banner h1 {
         font-size: 50px;
     }
+
     .banner {
         background-attachment: fixed;
     }
+
     .symbol {
         max-width: 40%;
     }
+
     .menuButtonMobile {
         visibility: hidden;
     }
+
     .menuButton {
         visibility: visible;
     }
