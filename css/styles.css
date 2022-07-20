@@ -101,6 +101,7 @@ p {
     display: flex;
     list-style: none;
     flex-direction: column;
+    padding-inline-start: 20px;
 }
 
 /* The navigation links inside the overlay */
@@ -157,7 +158,7 @@ p {
 }
 
 .church-logo {
-    width: 15%;
+    width: 4rem;
     padding: 1em 0 2em 0;
 }
 
@@ -858,6 +859,10 @@ footer .col-md-12 {
 
     .overlay-link {
         font-size: 30px
+    }
+
+    .overlay-p {
+        font-size: .7rem;
     }
 
     .copyright {
