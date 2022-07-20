@@ -157,7 +157,11 @@ p {
 }
 
 .church-logo {
-    width: 25%;
+    fill: whitesmoke;
+    transform: scale(0.3);
+}
+
+.church-logo-container {
     padding: 1em 0;
 }
 
