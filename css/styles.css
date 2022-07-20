@@ -130,7 +130,7 @@ p {
     height: 4rem;
     border-radius: 50%;
     background-color: rgb(0, 127, 152);
-    line-height: 40px;
+    line-height: 2.8rem;
     text-align: center;
     cursor: pointer;
     transition: .4s;
@@ -839,10 +839,10 @@ footer .col-md-12 {
     }
 
     .close-btn-background {
-        left: -14%;
+        left: -3.5rem;
         width: 3rem;
         height: 3rem;
-        line-height: 25px;
+        line-height: 1.8rem;
     }
 
     .copyright {
