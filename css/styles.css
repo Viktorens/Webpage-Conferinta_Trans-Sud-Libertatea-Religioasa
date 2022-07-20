@@ -156,8 +156,9 @@ p {
 }
 
 .church-logo {
-    width: 13vh;
+    width: 35%;
     padding: 1em 0;
+    padding-left: 40px;
 }
 
 /* Sabbath Column */
