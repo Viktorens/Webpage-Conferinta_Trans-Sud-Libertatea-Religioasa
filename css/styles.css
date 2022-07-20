@@ -157,12 +157,14 @@ p {
 }
 
 .church-logo {
-    fill: whitesmoke;
-    transform: scale(0.3);
+    width: 15%;
+    padding: 1em 0 2em 0;
 }
 
-.church-logo-container {
-    padding: 1em 0;
+.overlay-p {
+    color: whitesmoke;
+    font-size: 1.2rem;
+    cursor: default;
 }
 
 /* Sabbath Column */
