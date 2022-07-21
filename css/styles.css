@@ -260,20 +260,6 @@ p {
     padding: 5vh 0;
 }
 
-
-/* .title-button {
-    padding: 7px;
-    color: #002938;
-    font-size: 20px;
-    background-color: whitesmoke;
-    border: 3pt solid #002938;
-    border-radius: 50px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
-    transition: .4s;
-    font-size: 1.1rem;
-} */
-
-
 .title-button {
     font-size: 1.2rem;
     font-weight: 700;
@@ -281,25 +267,24 @@ p {
     display: flex;
     justify-content: left;
     transition: .4s;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    border: 3pt solid #002938;
 }
 
 .title-button-container {
-    border-radius: 50px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
     margin-left: 30%;
     transition: .4s;
-    border: 3pt solid #002938;
     max-width: fit-content;
-}
-
-.title-button-container:hover {
-    background-color: #002938;
-    transition: .4s;
-    border: 3pt solid #f5f5f5;
+    border-radius: 50px;
 }
 
 .title-button:hover {
     color: #f5f5f5;
+    background-color: #002938;
+    border-color: whitesmoke;
+    border-radius: 50px;
     transition: .4s;
 }
 
@@ -511,6 +496,8 @@ p {
     display: flex;
     justify-content: left;
     transition: .4s;
+    border: 3pt solid #002938;
+    border-radius: 15px;
 }
 
 .resource-download-button:hover {
@@ -533,10 +520,9 @@ p {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
     margin: 10px 0 10px 0;
     transition: .4s;
-    border: 3pt solid #002938;
 }
 
-.resource-download-bg:hover {
+.resource-download-button:hover {
     background-color: #002938;
     transition: .4s;
     border: 3pt solid #f5f5f5;
@@ -927,7 +913,7 @@ i.bi.bi-chevron-bar-up {
     }
 
     .title-button-container {
-        margin-left: 3%;
+        margin-left: 4%;
     }
 
     .church-name-logo {
@@ -1028,7 +1014,7 @@ i.bi.bi-chevron-bar-up {
     }
 
     .title-button-container {
-        margin-left: 3%;
+        margin-left: 4%;
     }
 
     .church-name-logo {
