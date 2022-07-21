@@ -260,7 +260,8 @@ p {
 }
 
 .title-button-container {
-    margin: 50px 0 0 20px;
+    margin-left: 20px;
+    margin-top: 5vh;
 }
 
 .title-button {
