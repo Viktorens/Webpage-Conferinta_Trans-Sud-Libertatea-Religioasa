@@ -239,6 +239,7 @@ p {
     font-weight: 700;
     cursor: default;
     border-radius: 0 30px 30px 0;
+    padding-bottom: 4vh;
 }
 
 .title-container {
@@ -261,7 +262,6 @@ p {
 
 .title-button-container {
     margin-left: 20px;
-    margin-top: 5vh;
 }
 
 .title-button {
