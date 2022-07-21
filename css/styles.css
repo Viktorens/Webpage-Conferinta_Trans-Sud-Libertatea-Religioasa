@@ -260,11 +260,8 @@ p {
     padding: 5vh 0;
 }
 
-.title-button-container {
-    margin-left: 20px;
-}
 
-.title-button {
+/* .title-button {
     padding: 7px;
     color: #002938;
     font-size: 20px;
@@ -274,13 +271,42 @@ p {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
     transition: .4s;
     font-size: 1.1rem;
+} */
+
+
+.title-button {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #252525;
+    display: flex;
+    justify-content: left;
+    transition: .4s;
+}
+
+.title-button-container {
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    margin-left: 30%;
+    transition: .4s;
+    border: 3pt solid #002938;
+    max-width: fit-content;
+}
+
+.title-button-container:hover {
+    background-color: #002938;
+    transition: .4s;
+    border: 3pt solid #f5f5f5;
 }
 
 .title-button:hover {
-    background-color: #002938;
-    color: whitesmoke;
-    border: 3pt solid whitesmoke;
+    color: #f5f5f5;
     transition: .4s;
+}
+
+.title-button span {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
 }
 
 /* --- Menu Bar --- */
@@ -901,7 +927,7 @@ i.bi.bi-chevron-bar-up {
     }
 
     .title-button-container {
-        padding-left: 0%;
+        margin-left: 2.5%;
     }
 
     .church-name-logo {
@@ -1002,7 +1028,7 @@ i.bi.bi-chevron-bar-up {
     }
 
     .title-button-container {
-        padding-left: 0%;
+        margin-left: 2.5%;
     }
 
     .church-name-logo {
@@ -1099,7 +1125,7 @@ i.bi.bi-chevron-bar-up {
     }
 
     .title-button-container {
-        padding-left: 30%;
+        margin-left: 32%;
     }
 
     .title-box {
