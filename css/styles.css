@@ -520,7 +520,6 @@ p {
     border-radius: 15px;
     margin: 10px 0 10px 0;
     transition: .4s;
-    padding: 0 35px;
 }
 
 .resource-download-button:hover {
