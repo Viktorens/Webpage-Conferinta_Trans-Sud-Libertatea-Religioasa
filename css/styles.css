@@ -9,6 +9,7 @@ html,
 body {
     height: 100vh;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 a:hover {
@@ -230,20 +231,60 @@ p {
     height: 105vh;
 }
 
-.banner h1 {
-    padding: 8px;
-    text-align: center;
-    position: relative;
+.title {
+    margin-left: 20px;
+    padding-right: 10%;
     top: 40%;
     color: #252525;
-    font-weight: 300;
+    font-weight: 700;
     cursor: default;
-    background: #f5f5f5;
-    border-radius: 30px;
-    width: 550px;
-    margin: auto;
+    border-radius: 0 30px 30px 0;
+}
+
+.title-container {
+    transition-duration: 300ms;
+    z-index: -1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: sans-serif;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 0 30px 30px 0;
+    max-height: 50%;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-    opacity: 100%;
+    padding: 40px 0;
+}
+
+.title-button-container {
+    margin: 30px 0 0 20px;
+}
+
+.title-button {
+    padding: 7px;
+    color: #002938;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: 3pt solid #002938;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    transition: .4s;
+    font-size: 1.1rem;
+}
+
+.title-button span {
+    white-space: nowrap;
+}
+
+.title-button:hover {
+    background-color: #002938;
+    color: whitesmoke;
+    border: 3pt solid whitesmoke;
+    transition: .4s;
 }
 
 /* --- Menu Bar --- */
@@ -491,7 +532,6 @@ p {
     float: left;
     width: 50%;
     overflow: hidden;
-    /* display: inline; */
     margin: auto;
 }
 
@@ -512,7 +552,6 @@ p {
 /* Images + Categories */
 
 .imageOverlay {
-    /* display: inline; */
     color: #f5f5f5;
     position: absolute;
     padding: 5px;
@@ -854,10 +893,21 @@ i.bi.bi-chevron-bar-up {
         max-width: 90%;
     }
 
-    .banner h1 {
-        font-size: 20px;
-        width: 250px;
+    .title-box {
+        width: 100%;
+        border-radius: 0;
     }
+
+    .title {
+        font-size: 30px;
+        padding-left: 0%;
+        border-radius: 0;
+    }
+
+    .title-button-container {
+        padding-left: 0%;
+    }
+
 
     .banner-button {
         font-size: 25px;
@@ -903,10 +953,6 @@ i.bi.bi-chevron-bar-up {
         font-size: 25px;
     }
 
-    .banner {
-        background-attachment: scroll;
-    }
-
     .church-name-logo {
         width: 60%;
         left: 0%;
@@ -945,10 +991,21 @@ i.bi.bi-chevron-bar-up {
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
-    .banner h1 {
-        font-size: 30px;
-        width: 350px;
+    .title-box {
+        width: 75%;
+        border-radius: 0 30px 30px 0;
     }
+
+    .title {
+        font-size: 30px;
+        padding-left: 0%;
+        border-radius: 0 30px 30px 0;
+    }
+
+    .title-button-container {
+        padding-left: 0%;
+    }
+
 
     .symbol {
         max-width: 70%;
@@ -1006,11 +1063,6 @@ i.bi.bi-chevron-bar-up {
         text-align: initial;
     }
 
-    .banner h1 {
-        font-size: 50px;
-        width: 550px;
-    }
-
     .all-sections {
         border-radius: 40px 40px 0 0;
     }
@@ -1039,8 +1091,17 @@ i.bi.bi-chevron-bar-up {
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-    .banner h1 {
-        font-size: 50px;
+    .title {
+        font-size: 35px;
+        padding-left: 30%;
+    }
+
+    .title-button-container {
+        padding-left: 30%;
+    }
+
+    .title-box {
+        width: 50%;
     }
 
     .church-name-logo {
@@ -1067,12 +1128,8 @@ i.bi.bi-chevron-bar-up {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
-    .banner h1 {
-        font-size: 50px;
-    }
-
-    .banner {
-        background-attachment: fixed;
+    .title {
+        font-size: 35px;
     }
 
     .symbol {
