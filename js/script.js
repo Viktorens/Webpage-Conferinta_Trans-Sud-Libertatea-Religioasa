@@ -138,13 +138,13 @@ function delay(time) {
 }
 var prevScrollpos = window.pageYOffset;
 
-function handleNavbar() {
+async function handleNavbar() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
         document.getElementById("navbar-mobile").style.top = "0";
     } else {
-        // await delay(100);
+        await delay(100);
         document.getElementById("navbar").style.top = "-100px";
         document.getElementById("navbar-mobile").style.top = "-100px";
     }
