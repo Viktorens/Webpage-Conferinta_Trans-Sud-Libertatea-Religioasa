@@ -140,7 +140,7 @@ var prevScrollpos = window.pageYOffset;
 
 async function handleNavbar() {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+    if (prevScrollpos > currentScrollPos || window.pageYOffset <= 50) {
         document.getElementById("navbar").style.top = "0";
         document.getElementById("navbar-mobile").style.top = "0";
     } else {
