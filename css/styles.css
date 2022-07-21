@@ -276,10 +276,6 @@ p {
     font-size: 1.1rem;
 }
 
-.title-button span {
-    white-space: nowrap;
-}
-
 .title-button:hover {
     background-color: #002938;
     color: whitesmoke;
