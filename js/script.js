@@ -19,7 +19,6 @@ function openNav() {
     var churchNameLogo = document.getElementById("church-name-logo");
     var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
-    scrollToTopButton.classList.remove("show-btn");
     churchNameLogo.classList.remove("elements-visible");
     churchNameLogo.classList.add("elements-hide");
     sabbathColumn.classList.remove("elements-visible");
@@ -31,6 +30,8 @@ function openNav() {
     document.getElementById("mobile-navbar-button").style.opacity = 0;
     document.getElementById("mobile-navbar-button").style.cursor = "default";
     menuButton.style.top = "-200px";
+    menuButton.style.opacity = 0;
+    scrollToTopButton.style.bottom = "-100px";
 }
 
 
@@ -40,6 +41,7 @@ function closeNav() {
     var sabbathColumn = document.getElementById("sabbath-column-button");
     var menuButton = document.getElementById("navbar-bar");
     var churchNameLogo = document.getElementById("church-name-logo");
+    var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
     churchNameLogo.classList.remove("elements-hide");
     churchNameLogo.classList.add("elements-visible");
@@ -53,6 +55,8 @@ function closeNav() {
     document.getElementById("my-nav").style.right = "-100%";
     document.getElementById("navbar-bar").style.top = "2em";
     menuButton.style.top = "2em";
+    menuButton.style.opacity = 1;
+    scrollToTopButton.style.bottom = "50px";
 }
 
 /**
