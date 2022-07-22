@@ -317,14 +317,13 @@ p {
 }
 
 .navbar-button-container {
-    right: 25%;
+    right: 18%;
     transition: .4s;
     max-width: -moz-fit-content;
     max-width: fit-content;
     border-radius: 50px;
-    /* position: fixed; */
+    position: fixed;
     display: flex;
-    align-items: center;
 }
 
 .navbar-button:hover {
@@ -351,7 +350,7 @@ p {
     /* overflow: hidden; */
     background: whitesmoke;
     border-radius: 50px;
-    /* cursor: pointer; */
+    cursor: pointer;
     /* align-items: center; */
     /* justify-content: center; */
     top: 5.5vh;
