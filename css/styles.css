@@ -355,7 +355,7 @@ p {
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    top: 38px;
+    top: 3.5vh;
     right: 20%;
     z-index: 6;
 }

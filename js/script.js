@@ -140,7 +140,7 @@ async function handleNavbar() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos || window.pageYOffset <= 50) {
         document.getElementById("navbar-box").style.top = "13px";
-        document.getElementById("mobile-navbar-button").style.top = "38px";
+        document.getElementById("mobile-navbar-button").style.top = "3.5vh";
     } else {
         await delay(100);
         document.getElementById("navbar-box").style.top = "-160px";
