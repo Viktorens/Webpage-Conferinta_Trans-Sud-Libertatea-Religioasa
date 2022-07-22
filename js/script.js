@@ -22,15 +22,15 @@ function openNav() {
     scrollToTopButton.classList.remove("show-btn");
     churchNameLogo.classList.remove("elements-visible");
     churchNameLogo.classList.add("elements-hide");
-    menuButton.classList.remove("elements-visible");
-    menuButton.classList.add("elements-hide");
     sabbathColumn.classList.remove("elements-visible");
     sabbathColumn.classList.add("elements-hide");
     blurElement.classList.remove("no-blur-filter");
     blurElement.classList.add("blur-filter");
+
     document.getElementById("my-nav").style.right = 0;
     document.getElementById("mobile-navbar-button").style.opacity = 0;
     document.getElementById("mobile-navbar-button").style.cursor = "default";
+    menuButton.style.top = "-200px";
 }
 
 
@@ -43,16 +43,16 @@ function closeNav() {
 
     churchNameLogo.classList.remove("elements-hide");
     churchNameLogo.classList.add("elements-visible");
-    menuButton.classList.remove("elements-hide");
-    menuButton.classList.add("elements-visible");
     sabbathColumn.classList.remove("elements-hide");
     sabbathColumn.classList.add("elements-visible");
     blurElement.classList.remove("blur-filter");
     blurElement.classList.add("no-blur-filter");
+
     document.getElementById("mobile-navbar-button").style.opacity = 1;
     document.getElementById("mobile-navbar-button").style.cursor = "pointer";
     document.getElementById("my-nav").style.right = "-100%";
     document.getElementById("navbar-bar").style.top = "2em";
+    menuButton.style.top = "2em";
 }
 
 /**
