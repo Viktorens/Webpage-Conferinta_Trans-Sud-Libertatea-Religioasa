@@ -52,7 +52,7 @@ function closeNav() {
     document.getElementById("mobile-navbar-button").style.opacity = 1;
     document.getElementById("mobile-navbar-button").style.cursor = "pointer";
     document.getElementById("my-nav").style.right = "-100%";
-    document.getElementById("navbar-bar").style.top = "0px";
+    document.getElementById("navbar-bar").style.top = "2em";
 }
 
 /**
@@ -139,12 +139,10 @@ var prevScrollpos = window.pageYOffset;
 async function handleNavbar() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos || window.pageYOffset <= 50) {
-        document.getElementById("navbar-box").style.top = "13px";
-        document.getElementById("mobile-navbar-button").style.top = "5.5vh";
+        document.getElementById("navbar-bar").style.top = "2em";
     } else {
         await delay(100);
-        document.getElementById("navbar-box").style.top = "-160px";
-        document.getElementById("mobile-navbar-button").style.top = "-100px";
+        document.getElementById("navbar-bar").style.top = "-200px";
     }
     prevScrollpos = currentScrollPos;
 }
