@@ -361,12 +361,11 @@ p {
 .mobile-navbar-container {
     position: fixed;
     right: 18%;
-    height: auto;
-    width: auto;
+    width: 100%;
     display: flex;
-    flex-flow: column nowrap;
+    /* flex-flow: column nowrap; */
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     z-index: 6;
 }
 
