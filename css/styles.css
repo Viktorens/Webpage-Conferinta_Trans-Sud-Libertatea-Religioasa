@@ -342,7 +342,7 @@ p {
 /* Mobile Navbar */
 
 .mobile-navbar-button {
-    display: inline-block;
+    display: flex;
     position: fixed;
     border: 3pt solid #002938;
     color: #002938;
