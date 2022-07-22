@@ -322,9 +322,9 @@ p {
     max-width: -moz-fit-content;
     max-width: fit-content;
     border-radius: 50px;
-    position: fixed;
+    /* position: fixed; */
     display: flex;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .navbar-button:hover {
