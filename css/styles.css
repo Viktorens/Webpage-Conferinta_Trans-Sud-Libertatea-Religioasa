@@ -360,13 +360,8 @@ p {
 
 .mobile-navbar-container {
     /* padding: .25rem .75rem; */
-    position: fixed;
-    right: 18%;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: .25rem;
+    /* position: fixed; */
+    /* padding-right: 18%; */
     transition: box-shadow .15s ease-in-out;
     z-index: 6;
 }
