@@ -292,7 +292,7 @@ p {
     width: 83%;
     height: 16vh;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     position: fixed;
     top: 13px;
     transition: all .6s ease;
