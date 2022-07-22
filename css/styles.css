@@ -355,7 +355,6 @@ p {
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    /* text-align: center; */
     top: 50px;
     right: 20%;
     z-index: 6;
@@ -717,7 +716,6 @@ i.bi.bi-chevron-bar-up {
 
     .church-name-logo {
         max-width: 50vh;
-        padding-top: 2vh;
     }
 
     .banner-button {
