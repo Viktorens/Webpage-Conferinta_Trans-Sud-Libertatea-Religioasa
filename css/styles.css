@@ -359,15 +359,13 @@ p {
 }
 
 .mobile-navbar-container {
-    position: fixed;
-    right: 18%;
-    height: 10vh;
-    width: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    z-index: 6;
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
 }
 
 .mobile-navbar-button:hover {
