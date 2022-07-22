@@ -344,19 +344,19 @@ p {
 .mobile-navbar-button {
     border: 3pt solid #002938;
     color: #002938;
-    height: 60px;
+    height: 57px;
     width: 60px;
-    margin: 0 5px;
-    overflow: hidden;
+    margin-right: 15vh;
+    /* overflow: hidden; */
     background: whitesmoke;
     border-radius: 50px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    top: 5.5vh;
-    position: fixed;
+    /* cursor: pointer; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* top: 5.5vh; */
+    /* position: fixed; */
     right: 18%;
-    z-index: 6;
+    /* z-index: 6; */
 }
 
 .mobile-navbar-button:hover {
@@ -924,9 +924,9 @@ i.bi.bi-chevron-bar-up {
         max-width: 40%;
     }
 
-    .mobile-navbar-button {
+    /* .mobile-navbar-button {
         visibility: hidden;
-    }
+    } */
 
     .desktop-navbar {
         visibility: visible;
