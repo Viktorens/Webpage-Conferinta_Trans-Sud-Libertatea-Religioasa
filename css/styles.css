@@ -359,12 +359,11 @@ p {
     z-index: 6;
 }
 
-
-
 .mobile-navbar-button:hover {
-    color: whitesmoke;
+    color: whitesmoke !important;
     background-color: #002938;
     border-color: whitesmoke;
+    border-radius: 50px;
 }
 
 i.bi.bi-list {
@@ -747,7 +746,7 @@ i.bi.bi-chevron-bar-up {
         left: 0%;
     }
 
-    .navbar-button-container {
+    .desktop-navbar {
         visibility: hidden;
     }
 
@@ -823,7 +822,7 @@ i.bi.bi-chevron-bar-up {
         visibility: visible;
     }
 
-    .navbar-button-container {
+    .desktop-navbar {
         visibility: hidden;
     }
 
@@ -929,7 +928,7 @@ i.bi.bi-chevron-bar-up {
         visibility: hidden;
     }
 
-    .navbar-button-container {
+    .desktop-navbar {
         visibility: visible;
     }
 }
