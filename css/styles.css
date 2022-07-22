@@ -342,8 +342,6 @@ p {
 /* Mobile Navbar */
 
 .mobile-navbar-button {
-    display: flex;
-    position: fixed;
     border: 3pt solid #002938;
     color: #002938;
     height: 60px;
@@ -357,6 +355,18 @@ p {
     justify-content: center;
     top: 3.5vh;
     right: 20%;
+    z-index: 6;
+}
+
+.mobile-navbar-container {
+    position: fixed;
+    right: 18%;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     z-index: 6;
 }
 
@@ -714,9 +724,7 @@ i.bi.bi-chevron-bar-up {
         margin-left: 4%;
     }
 
-    .church-name-logo {
-        max-width: 50vh;
-    }
+
 
     .banner-button {
         font-size: 25px;
@@ -798,7 +806,7 @@ i.bi.bi-chevron-bar-up {
 
     .church-name-logo {
         left: 1%;
-        max-width: 40vh;
+        width: 40vh;
     }
 
     .symbol {
