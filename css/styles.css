@@ -277,7 +277,7 @@ p {
 /* Church Name */
 .church-name-logo {
     position: absolute;
-    display: flex;
+    /* display: flex; */
     width: 80%;
     z-index: 5;
     padding-top: .75vh;
@@ -292,7 +292,7 @@ p {
     width: 83%;
     height: 16vh;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     position: fixed;
     top: 13px;
     transition: all .6s ease;
