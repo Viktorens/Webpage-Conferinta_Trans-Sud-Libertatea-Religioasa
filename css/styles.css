@@ -822,7 +822,7 @@ i.bi.bi-chevron-bar-up {
     }
 
     .desktop-navbar {
-        visibility: hidden;
+        /* visibility: hidden; */
     }
 
     .banner-wrapper .banner-button:nth-child(1):hover {
