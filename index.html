@@ -51,40 +51,46 @@
         </div>
         <!-- Gradient -->
         <canvas id="gradient-canvas" data-transition-in></canvas>
-        <!-- Church Department -->
-        <a class="church-name-button" href="https://www.libertateareligioasasud.ro">
-            <img class="church-name-logo" id="church-name-logo"
-                src="./img/20211024_biserica_adventista_LR_TransSud_L Secondary.svg" alt="Logo">
-        </a>
         <!-- Sabbath Column -->
         <a class="sabbath-column" id="sabbath-column-button" onclick="openNav(); disableScrolling()">
             <img class="symbol" src="./img/20211024_biserica_adventista_LR_TransSud_Symbol.svg" alt="Logo">
         </a>
-        <!-- Menu Bar -->
-        <div class="menubutton-mobile" id="navbar-mobile">
-            <div class="banner-wrapper">
-                <a class="banner-button" onclick="openNav(); disableScrolling()">
-                    <div class="icon"><i class="bi bi-list"></i></div>
-                    <span>Meniu</span>
-                </a>
+        <!-- Navbar -->
+        <div id="navbar-bar" class="navbar-bar">
+            <div id="navbar-box" class="navbar-box">
+                <div class="row">
+                    <!-- Church Department -->
+                    <div class="col-lg-6 col-md-12 navbar-container">
+                        <a class="church-name-button" href="https://www.libertateareligioasasud.ro">
+                            <img class="church-name-logo" id="church-name-logo"
+                                src="./img/20211024_biserica_adventista_LR_TransSud_L Secondary.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Buttons -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="navbar-button-container">
+                            <a class="navbar-button" href="https://www.libertateareligioasasud.ro">
+                                <div class="icon"><i class="bi bi-house"></i></div>
+                                <span>Acasă</span>
+                            </a>
+                            <a class="navbar-button" href="#">
+                                <div class="icon"><i class="bi bi-file-earmark-arrow-down"></i></div>
+                                <span>Evenimente</span>
+                            </a>
+                            <a class="navbar-button" href="#">
+                                <div class="icon"><i class="bi bi-person-circle"></i></div>
+                                <span>Contact</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="menubutton show-background" id="navbar">
-            <div class="banner-wrapper">
-                <a class="banner-button" href="https://www.libertateareligioasasud.ro">
-                    <div class="icon"><i class="bi bi-house"></i></div>
-                    <span>Acasă</span>
-                </a>
-                <a class="banner-button" href="#">
-                    <div class="icon"><i class="bi bi-file-earmark-arrow-down"></i></div>
-                    <span>Evenimente</span>
-                </a>
-                <a class="banner-button" href="#">
-                    <div class="icon"><i class="bi bi-person-circle"></i></div>
-                    <span>Contact</span>
-                </a>
-            </div>
-        </div>
+        <!-- Mobile Navbar Button -->
+        <button type="button" class="mobile-navbar-button" id="mobile-navbar-button"
+            onclick="openNav(); disableScrolling()">
+            <i class=" bi bi-list"></i>
+        </button>
         <!-- Scroll To Top Button -->
         <button type="button" class="scroll-to-top-btn" id="scroll-to-top-btn">
             <i class="bi bi-chevron-bar-up"></i>

@@ -15,14 +15,11 @@ function openInNewTab(url) {
 function openNav() {
     var blurElement = document.getElementById("main");
     var sabbathColumn = document.getElementById("sabbath-column-button");
-    var menuButton = document.getElementById("navbar");
+    var menuButton = document.getElementById("navbar-bar");
     var churchNameLogo = document.getElementById("church-name-logo");
-    var menuButtonMobile = document.getElementById("navbar-mobile");
     var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
     scrollToTopButton.classList.remove("show-btn");
-    menuButtonMobile.classList.remove("elements-visible");
-    menuButtonMobile.classList.add("elements-hide");
     churchNameLogo.classList.remove("elements-visible");
     churchNameLogo.classList.add("elements-hide");
     menuButton.classList.remove("elements-visible");
@@ -32,6 +29,8 @@ function openNav() {
     blurElement.classList.remove("no-blur-filter");
     blurElement.classList.add("blur-filter");
     document.getElementById("my-nav").style.right = 0;
+    document.getElementById("mobile-navbar-button").style.opacity = 0;
+    document.getElementById("mobile-navbar-button").style.cursor = "default";
 }
 
 
@@ -39,12 +38,9 @@ function openNav() {
 function closeNav() {
     var blurElement = document.getElementById("main");
     var sabbathColumn = document.getElementById("sabbath-column-button");
-    var menuButton = document.getElementById("navbar");
+    var menuButton = document.getElementById("navbar-bar");
     var churchNameLogo = document.getElementById("church-name-logo");
-    var menuButtonMobile = document.getElementById("navbar-mobile");
 
-    menuButtonMobile.classList.remove("elements-hide");
-    menuButtonMobile.classList.add("elements-visible");
     churchNameLogo.classList.remove("elements-hide");
     churchNameLogo.classList.add("elements-visible");
     menuButton.classList.remove("elements-hide");
@@ -53,8 +49,10 @@ function closeNav() {
     sabbathColumn.classList.add("elements-visible");
     blurElement.classList.remove("blur-filter");
     blurElement.classList.add("no-blur-filter");
+    document.getElementById("mobile-navbar-button").style.opacity = 1;
+    document.getElementById("mobile-navbar-button").style.cursor = "pointer";
     document.getElementById("my-nav").style.right = "-100%";
-    document.getElementById("navbar").style.top = "0px";
+    document.getElementById("navbar-bar").style.top = "0px";
 }
 
 /**
@@ -141,12 +139,12 @@ var prevScrollpos = window.pageYOffset;
 async function handleNavbar() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos || window.pageYOffset <= 50) {
-        document.getElementById("navbar").style.top = "0";
-        document.getElementById("navbar-mobile").style.top = "0";
+        document.getElementById("navbar-box").style.top = "13px";
+        document.getElementById("mobile-navbar-button").style.top = "5.5vh";
     } else {
         await delay(100);
-        document.getElementById("navbar").style.top = "-100px";
-        document.getElementById("navbar-mobile").style.top = "-100px";
+        document.getElementById("navbar-box").style.top = "-160px";
+        document.getElementById("mobile-navbar-button").style.top = "-100px";
     }
     prevScrollpos = currentScrollPos;
 }

@@ -1,5 +1,4 @@
 /* General */
-
 html * {
     font-family: 'Montserrat';
     box-sizing: border-box;
@@ -26,7 +25,6 @@ p {
 }
 
 /* Show/Hide Elements */
-
 .elements-hide {
     transition: 0.5s;
     opacity: 0;
@@ -34,11 +32,10 @@ p {
 
 .elements-visible {
     transition: 0.5s;
-    opacity: 100%;
+    opacity: 1;
 }
 
 /* Gradient */
-
 #gradient-canvas {
     position: fixed;
     height: 100vh;
@@ -51,7 +48,6 @@ p {
 }
 
 /* Add blur */
-
 .blur-filter {
     -webkit-transition: all 0.6s ease-out;
     -moz-transition: all 0.6s ease-out;
@@ -69,7 +65,6 @@ p {
 }
 
 /* Menu Overlay */
-
 .overlay {
     position: fixed;
     top: 0;
@@ -88,7 +83,6 @@ p {
 }
 
 /* Position the content inside the overlay */
-
 .overlay-content {
     height: 100%;
     overflow-y: scroll;
@@ -106,7 +100,6 @@ p {
 }
 
 /* The navigation links inside the overlay */
-
 .overlay-link {
     padding: 8px;
     text-decoration: none;
@@ -125,7 +118,6 @@ p {
 
 
 /* Position the close button (top left corner) */
-
 .close-btn-background {
     position: absolute;
     top: 1rem;
@@ -153,7 +145,6 @@ p {
     transition: .4s;
 }
 
-
 .close-btn {
     color: whitesmoke;
 }
@@ -170,7 +161,6 @@ p {
 }
 
 /* Sabbath Column */
-
 .sabbath-column {
     position: fixed;
     /* height: calc(100vh - calc(100vh - 100%)); */
@@ -205,27 +195,15 @@ p {
     cursor: pointer;
 }
 
-/* Church Name */
-
-.church-name-logo {
-    position: absolute;
-    display: block;
-    max-width: 40vh;
-    margin: 20px 0 0 10px;
-    z-index: 5;
-}
-
 #navbar {
     transition: .5s;
 }
 
-#navbar-mobile {
+#mobile-navbar-button {
     transition: .5s;
 }
 
-
 /* --- Tite --- */
-
 #banner-title {
     height: 105vh;
 }
@@ -294,104 +272,106 @@ p {
     padding: .5rem;
 }
 
-/* --- Menu Bar --- */
+/* --- Navbar --- */
 
-.menubutton-mobile {
+/* Church Name */
+.church-name-logo {
+    position: absolute;
     display: flex;
-    position: fixed;
-    top: 0;
-    width: 150%;
-    align-items: center;
-    justify-content: center;
-    text-align: initial;
-    z-index: 4;
+    width: 40vh;
+    z-index: 5;
+    padding-top: .75vh;
+    top: 0px;
 }
 
-.menubutton {
+.navbar-box {
+    z-index: 5;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    border-radius: 0 30px 30px 0;
+    width: 83%;
+    height: 16vh;
     display: flex;
-    position: fixed;
-    top: 0;
-    width: 150%;
     align-items: center;
-    justify-content: center;
-    text-align: initial;
-    z-index: 4;
+    position: fixed;
+    top: 13px;
+    transition: all .6s ease;
 }
 
-.banner-wrapper {
-    place-content: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
+.navbar-container {
+    display: contents !important;
 }
 
-.banner-button {
-    text-decoration: none;
-    color: #f5f5f5 !important;
+.navbar-button {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #252525;
+    display: flex;
+    justify-content: left;
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    margin: 0 2%;
+    border-radius: 15px;
+    padding: 0 2%;
 }
 
-.banner-wrapper .banner-button {
+.navbar-button-container {
+    right: 25%;
+    transition: .4s;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    border-radius: 50px;
+    position: fixed;
+    display: flex;
+}
+
+.navbar-button:hover {
+    color: #f5f5f5;
+    background-color: #002938;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.navbar-button span {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+/* Mobile Navbar */
+
+.mobile-navbar-button {
     display: inline-block;
-    height: 2.2em;
-    width: 2.2em;
+    position: fixed;
+    border: 3pt solid #002938;
+    color: #002938;
+    height: 60px;
+    width: 60px;
     margin: 0 5px;
     overflow: hidden;
-    background: #002938;
+    background: whitesmoke;
     border-radius: 50px;
     cursor: pointer;
     align-items: center;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease-out;
-}
-
-.banner-wrapper .banner-button:nth-child(1):hover {
-    width: 6.5em;
-}
-
-.banner-wrapper .banner-button:nth-child(2):hover {
-    width: 9.3em;
-}
-
-.banner-wrapper .banner-button:nth-child(3):hover {
-    width: 7.25em;
-}
-
-.banner-wrapper .banner-button .icon {
-    display: inline-block;
-    height: 2.2em;
-    width: 2.2em;
+    justify-content: center;
     text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 2;
-    background: #f5f5f5;
-    color: #252525;
+    top: 50px;
+    right: 20%;
+    z-index: 6;
 }
 
-.banner-wrapper .banner-button:hover .icon {
-    background: #f5f5f5;
+.mobile-navbar-button:hover {
+    color: whitesmoke;
+    background-color: #002938;
+    border-color: whitesmoke;
 }
 
-.banner-wrapper .banner-button .icon i {
-    font-size: 1.05em;
-    line-height: 2.2em;
-    transition: all 0.3s ease-out;
-}
-
-.banner-wrapper .banner-button:hover .icon i {
-    color: #252525;
-}
-
-.banner-wrapper .banner-button span {
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 1;
-    margin-left: 5px;
-    transition: all 0.3s ease-out;
-    color: #f5f5f5;
+i.bi.bi-list {
+    font-size: 1.8em;
 }
 
 /* Line */
-
 .line-container {
     display: flex;
     justify-content: center;
@@ -422,7 +402,6 @@ p {
 }
 
 /* --- Sections --- */
-
 .all-sections {
     margin: auto;
     color: #252525;
@@ -470,7 +449,6 @@ p {
 }
 
 /* About Section */
-
 .about p:nth-child(2) {
     text-indent: 1.5rem;
     font-size: 15px;
@@ -489,7 +467,6 @@ p {
 }
 
 /* Resources Section */
-
 .resource-download-button {
     padding: 3%;
     color: #252525;
@@ -534,7 +511,6 @@ p {
 }
 
 /* Contact Section */
-
 .contact p {
     font-size: 15px;
     line-height: 26px;
@@ -561,7 +537,6 @@ p {
 }
 
 /* --- Footer --- */
-
 footer {
     display: flex;
     background-color: #f5f5f5;
@@ -587,7 +562,6 @@ footer .col-md-12 {
 }
 
 /* --- Social Media Buttons --- */
-
 .social-media {
     display: block;
     padding: 20px 0px 20px 0px;
@@ -644,7 +618,6 @@ footer .col-md-12 {
 }
 
 /* Useful Links */
-
 .useful-links-button {
     display: flex;
     color: #f5f5f5;
@@ -664,7 +637,6 @@ footer .col-md-12 {
 
 
 /* --- Copyright --- */
-
 .copyright {
     display: flex;
     cursor: pointer;
@@ -723,7 +695,6 @@ i.bi.bi-chevron-bar-up {
 /* --- Media Queries ---- */
 
 /* Extra small devices (portrait phones, less than 576px)*/
-
 @media (max-width: 576px) {
     .symbol {
         max-width: 90%;
@@ -746,6 +717,7 @@ i.bi.bi-chevron-bar-up {
 
     .church-name-logo {
         max-width: 50vh;
+        padding-top: 2vh;
     }
 
     .banner-button {
@@ -775,11 +747,11 @@ i.bi.bi-chevron-bar-up {
     }
 
     .church-name-logo {
-        width: 60%;
+        width: 80%;
         left: 0%;
     }
 
-    .menubutton {
+    .navbar-button-container {
         visibility: hidden;
     }
 
@@ -810,7 +782,6 @@ i.bi.bi-chevron-bar-up {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-
 @media (min-width: 576px) {
     .title-box {
         width: 75%;
@@ -828,6 +799,7 @@ i.bi.bi-chevron-bar-up {
     }
 
     .church-name-logo {
+        left: 1%;
         max-width: 40vh;
     }
 
@@ -851,11 +823,11 @@ i.bi.bi-chevron-bar-up {
         background-attachment: scroll;
     }
 
-    .menubutton-mobile {
+    .mobile-navbar-button {
         visibility: visible;
     }
 
-    .menubutton {
+    .navbar-button-container {
         visibility: hidden;
     }
 
@@ -881,7 +853,6 @@ i.bi.bi-chevron-bar-up {
 }
 
 /* Medium devices (tablets, 768px and up) */
-
 @media (min-width: 768px) {
     body {
         text-align: initial;
@@ -913,7 +884,6 @@ i.bi.bi-chevron-bar-up {
 }
 
 /* Large devices (desktops, 992px and up) */
-
 @media (min-width: 992px) {
     .title {
         font-size: 35px;
@@ -930,7 +900,6 @@ i.bi.bi-chevron-bar-up {
 
     .church-name-logo {
         left: 13%;
-        max-width: 40vh;
     }
 
     .social-media-button {
@@ -951,7 +920,6 @@ i.bi.bi-chevron-bar-up {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-
 @media (min-width: 1200px) {
     .title {
         font-size: 35px;
@@ -961,11 +929,11 @@ i.bi.bi-chevron-bar-up {
         max-width: 40%;
     }
 
-    .menubutton-mobile {
+    .mobile-navbar-button {
         visibility: hidden;
     }
 
-    .menubutton {
+    .navbar-button-container {
         visibility: visible;
     }
 }
