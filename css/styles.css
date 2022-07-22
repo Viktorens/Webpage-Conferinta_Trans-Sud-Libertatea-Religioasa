@@ -354,7 +354,8 @@ p {
     align-items: center;
     justify-content: center;
     top: 3.5vh;
-    right: 20%;
+    position: fixed;
+    right: 18%;
     z-index: 6;
 }
 
@@ -362,7 +363,6 @@ p {
     /* padding: .25rem .75rem; */
     /* position: fixed; */
     /* padding-right: 18%; */
-    transition: box-shadow .15s ease-in-out;
     z-index: 6;
 }
 
