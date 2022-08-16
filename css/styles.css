@@ -90,6 +90,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 
 .overlay-buttons {
