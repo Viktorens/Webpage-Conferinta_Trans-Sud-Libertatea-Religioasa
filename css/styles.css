@@ -553,6 +553,7 @@ i.bi.bi-chevron-bar-up {
 
     .all-sections {
         border-radius: 0;
+        width: 100%;
     }
 }
 
@@ -607,7 +608,7 @@ i.bi.bi-chevron-bar-up {
     }
 
     .all-sections {
-        border-radius: 0;
+        border-radius: 40px;
     }
 }
 
@@ -637,9 +638,7 @@ i.bi.bi-chevron-bar-up {
         padding-bottom: 30px;
     }
 
-    .all-sections {
-        border-radius: 40px;
-    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
