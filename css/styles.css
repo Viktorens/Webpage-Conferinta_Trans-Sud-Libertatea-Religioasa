@@ -270,6 +270,12 @@ p {
     transition: .4s;
 }
 
+.active-tab {
+    color: #f5f5f5;
+    background-color: #002938;
+    border-radius: 15px;
+}
+
 .navbar-button span {
     display: flex;
     align-items: center;
