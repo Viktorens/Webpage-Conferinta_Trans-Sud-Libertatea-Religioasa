@@ -290,7 +290,6 @@ p {
 
 /* Mobile Navbar */
 .mobile-navbar-button {
-    border: 3pt solid #002938;
     color: #002938;
     height: 60px;
     width: 60px;
@@ -303,10 +302,7 @@ p {
 }
 
 .mobile-navbar-button:hover {
-    color: whitesmoke !important;
-    background-color: #002938;
-    border-color: whitesmoke;
-    border-radius: 50px;
+    background-color: whitesmoke;
 }
 
 i.bi.bi-list {
