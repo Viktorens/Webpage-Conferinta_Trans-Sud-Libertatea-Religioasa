@@ -22,6 +22,7 @@ function openNav() {
 
     document.getElementById("my-nav").style.right = 0;
     document.getElementById("my-nav-background").style.opacity = 1;
+    document.getElementById("my-nav-background").style.zIndex = 2;
     document.getElementById("mobile-navbar-button").style.opacity = 0;
     document.getElementById("mobile-navbar-button").style.cursor = "default";
     menuButton.style.top = "-200px";
@@ -42,6 +43,8 @@ function closeNav() {
     document.getElementById("mobile-navbar-button").style.opacity = 1;
     document.getElementById("mobile-navbar-button").style.cursor = "pointer";
     document.getElementById("my-nav").style.right = "-100%";
+    document.getElementById("my-nav-background").style.zIndex = -5;
+
     document.getElementById("my-nav-background").style.opacity = 0;
     document.getElementById("navbar-bar").style.top = "2em";
     menuButton.style.top = "2em";
