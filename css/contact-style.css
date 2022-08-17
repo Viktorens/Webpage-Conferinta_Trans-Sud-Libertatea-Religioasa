@@ -79,6 +79,7 @@
 }
 
 .contact-element {
+    display: flex;
     justify-content: left;
     text-align: center;
     font-size: 1.2rem;
@@ -148,6 +149,11 @@
     .image-contact {
         margin-top: 30px;
     }
+
+    .contact-element {
+        flex-direction: column;
+        font-size: .9rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -168,7 +174,7 @@
     }
 
     .contact-element {
-        display: flex;
+
         flex-direction: column;
     }
 
