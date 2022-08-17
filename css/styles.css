@@ -11,6 +11,10 @@ body {
     scroll-behavior: smooth;
 }
 
+.row {
+    margin: 0;
+}
+
 a:hover {
     text-decoration: none;
     color: #f5f5f5;
@@ -47,31 +51,25 @@ p {
     z-index: -2;
 }
 
-/* Add blur */
-.blur-filter {
-    -webkit-transition: all 0.6s ease-out;
-    -moz-transition: all 0.6s ease-out;
-    -o-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out;
-    filter: blur(20px);
-}
-
-.no-blur-filter {
-    -webkit-transition: all 0.6s ease-out;
-    -moz-transition: all 0.6s ease-out;
-    -o-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out;
-    filter: none;
-}
-
 /* Menu Overlay */
 .overlay {
+    -webkit-backdrop-filter: blur(40px) contrast(90%);
+    backdrop-filter: blur(40px) contrast(90%);
     position: fixed;
-    top: 0;
-    right: -100%;
-    z-index: 6;
+    padding: 0 1rem 1rem;
+    height: 100%;
+    width: 100%;
+    right: 0%;
+    z-index: 2;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay-container {
+    position: fixed;
     padding: 0 1rem 1rem;
     width: 85.68%;
+    right: -100%;
     height: 100%;
     background-color: rgba(0, 127, 152, 0.75);
     border-radius: 4vh 0 0 4vh;
@@ -79,6 +77,7 @@ p {
     justify-content: left;
     align-items: flex-start;
     text-align: left;
+    z-index: 6;
     transition: right .4s ease-in-out;
 }
 
@@ -117,7 +116,6 @@ p {
 .close-btn:focus {
     color: #255760;
 }
-
 
 /* Position the close button (top left corner) */
 .close-btn-background {
@@ -205,77 +203,7 @@ p {
     transition: .5s;
 }
 
-/* --- Tite --- */
-#banner-title {
-    height: 105vh;
-}
-
-.title {
-    margin-left: 20px;
-    padding-right: 10%;
-    top: 40%;
-    color: #252525;
-    font-weight: 700;
-    cursor: default;
-    border-radius: 0 30px 30px 0;
-    padding-bottom: 4vh;
-}
-
-.title-container {
-    transition-duration: 300ms;
-    z-index: -1;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.title-box {
-    background-color: rgba(255, 255, 255, 0.5);
-    font-family: sans-serif;
-    -webkit-backdrop-filter: blur(40px) contrast(90%) brightness(150%);
-    backdrop-filter: blur(40px) contrast(90%) brightness(150%);
-    border-radius: 0 30px 30px 0;
-    max-height: 50%;
-    padding: 5vh 0;
-}
-
-.title-button {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #252525;
-    display: flex;
-    justify-content: left;
-    transition: .4s;
-    border-radius: 50px;
-    background-color: whitesmoke;
-    border: 3pt solid #002938;
-}
-
-.title-button-container {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
-    margin-left: 30%;
-    transition: .4s;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    border-radius: 50px;
-}
-
-.title-button:hover {
-    color: #f5f5f5;
-    background-color: #002938;
-    border-color: whitesmoke;
-    border-radius: 50px;
-    transition: .4s;
-}
-
-.title-button span {
-    display: flex;
-    align-items: center;
-    padding: .5rem;
-}
-
 /* --- Navbar --- */
-
 #navbar-bar {
     display: flex;
     position: fixed;
@@ -384,171 +312,6 @@ i.bi.bi-list {
     width: 35vh;
     z-index: 5;
     object-fit: cover;
-}
-
-/* Line */
-.line-container {
-    display: flex;
-    justify-content: center;
-}
-
-.line-short {
-    text-align: right;
-    justify-content: right;
-    width: 45px;
-    border: 4px solid #002938;
-    background: #002938;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    margin-top: 0px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-}
-
-.line-long {
-    align-items: center;
-    width: 130px;
-    border: 4px solid #002938;
-    background: #002938;
-    border-radius: 10px;
-    margin-left: 35px;
-    margin-bottom: 50px;
-    margin-top: 0px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-}
-
-/* --- Sections --- */
-.all-sections {
-    margin: auto;
-    color: #252525;
-    background: #f5f5f5;
-    border: 50px solid #f5f5f5;
-}
-
-.resources-title h3,
-.about-title h3,
-.portofolioTitle h3,
-.projectsTitle h3,
-.contactTitle h3 {
-    text-align: center;
-    overflow: visible;
-    padding: 8px;
-    color: #f5f5f5;
-    font-size: 30px;
-    font-weight: 300;
-    cursor: default;
-    background-color: #002938;
-    border-radius: 50px;
-    width: 6em;
-    margin: auto;
-    margin-bottom: 30px;
-    margin-top: 75px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
-}
-
-.col-md-12,
-.col-lg-6 {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-subtitle,
-.resource-category-title {
-    overflow-wrap: break-word;
-    text-align: center;
-    margin: 40px 0 20px 0;
-    line-height: 40px;
-    word-break: keep-all;
-    font-weight: 300;
-    font-size: 45px;
-}
-
-/* About Section */
-.about p:nth-child(2) {
-    text-indent: 1.5rem;
-    font-size: 15px;
-    line-height: 25px;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-    text-align: left;
-    margin: 20px 0 20px 0;
-}
-
-.image-about {
-    width: 100%;
-    border-radius: 50px;
-    transition: all 0.3s ease-out;
-}
-
-/* Resources Section */
-.resource-download-button {
-    padding: 3%;
-    color: #252525;
-    display: flex;
-    justify-content: left;
-    transition: .4s;
-    border: 3pt solid #002938;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
-}
-
-.resource-download-button:hover {
-    color: #f5f5f5;
-    transition: .4s;
-}
-
-.resource-download-button .resource-download-icon {
-    display: flex;
-    align-items: center;
-}
-
-.resource-download-button span {
-    display: flex;
-    align-items: center;
-}
-
-.resource-download-bg {
-    border-radius: 15px;
-    margin: 10px 0 10px 0;
-    transition: .4s;
-}
-
-.resource-download-button:hover {
-    background-color: #002938;
-    transition: .4s;
-    border: 3pt solid #f5f5f5;
-}
-
-.resource-download-icon {
-    margin-right: 15px;
-    font-size: 25px;
-}
-
-/* Contact Section */
-.contact p {
-    font-size: 15px;
-    line-height: 26px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-    text-align: center;
-    margin: auto;
-    width: 75%;
-}
-
-.contactLinks {
-    cursor: pointer;
-    text-decoration: #f5f5f5;
-    color: #f5f5f5;
-    margin-top: 20px;
-    justify-content: center;
-    display: flex;
-}
-
-.contactLinks:hover {
-    text-decoration: underline;
 }
 
 /* --- Footer --- */
@@ -715,21 +478,6 @@ i.bi.bi-chevron-bar-up {
         max-width: 90%;
     }
 
-    .title-box {
-        width: 100%;
-        border-radius: 0;
-    }
-
-    .title {
-        font-size: 30px;
-        padding-left: 0%;
-        border-radius: 0;
-    }
-
-    .title-button-container {
-        margin-left: 4%;
-    }
-
     .desktop-nav {
         visibility: hidden;
     }
@@ -752,16 +500,6 @@ i.bi.bi-chevron-bar-up {
 
     .copyright {
         font-size: 12px;
-    }
-
-    .all-sections {
-        border-radius: 0;
-        border: 20px solid #f5f5f5;
-    }
-
-    .resource-category-title,
-    .about-subtitle {
-        font-size: 25px;
     }
 
     .church-name-logo {
@@ -805,23 +543,8 @@ i.bi.bi-chevron-bar-up {
         visibility: hidden;
     }
 
-    .title-box {
-        width: 75%;
-        border-radius: 0 30px 30px 0;
-    }
-
-    .title {
-        font-size: 30px;
-        padding-left: 0%;
-        border-radius: 0 30px 30px 0;
-    }
-
     .my-nav .navbar-brand {
         padding-left: 0%;
-    }
-
-    .title-button-container {
-        margin-left: 4%;
     }
 
     .symbol {
@@ -830,14 +553,6 @@ i.bi.bi-chevron-bar-up {
 
     .banner-button {
         font-size: 30px;
-    }
-
-    .all-sections {
-        border-radius: 0;
-    }
-
-    .aboutName {
-        font-size: 45px;
     }
 
     .banner {
@@ -879,10 +594,6 @@ i.bi.bi-chevron-bar-up {
         text-align: initial;
     }
 
-    .all-sections {
-        border-radius: 40px 40px 0 0;
-    }
-
     .banner-wrapper .banner-button:nth-child(1):hover {
         width: 6.5em;
     }
@@ -906,21 +617,9 @@ i.bi.bi-chevron-bar-up {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .title {
-        font-size: 35px;
-        padding-left: 30%;
-    }
 
     .my-nav .navbar-brand {
         padding-left: 15%;
-    }
-
-    .title-button-container {
-        margin-left: 32%;
-    }
-
-    .title-box {
-        width: 50%;
     }
 
     .church-name-logo {
@@ -946,9 +645,6 @@ i.bi.bi-chevron-bar-up {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .title {
-        font-size: 35px;
-    }
 
     .symbol {
         max-width: 40%;

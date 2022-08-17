@@ -13,20 +13,15 @@ function openInNewTab(url) {
 
 // Opens the overlay
 function openNav() {
-    var blurElement = document.getElementById("main");
     var sabbathColumn = document.getElementById("sabbath-column-button");
     var menuButton = document.getElementById("navbar-bar");
-    var churchNameLogo = document.getElementById("church-name-logo");
     var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
-    churchNameLogo.classList.remove("elements-visible");
-    churchNameLogo.classList.add("elements-hide");
     sabbathColumn.classList.remove("elements-visible");
     sabbathColumn.classList.add("elements-hide");
-    blurElement.classList.remove("no-blur-filter");
-    blurElement.classList.add("blur-filter");
 
     document.getElementById("my-nav").style.right = 0;
+    document.getElementById("my-nav-background").style.opacity = 1;
     document.getElementById("mobile-navbar-button").style.opacity = 0;
     document.getElementById("mobile-navbar-button").style.cursor = "default";
     menuButton.style.top = "-200px";
@@ -37,22 +32,17 @@ function openNav() {
 
 // Closes the overlay
 function closeNav() {
-    var blurElement = document.getElementById("main");
     var sabbathColumn = document.getElementById("sabbath-column-button");
     var menuButton = document.getElementById("navbar-bar");
-    var churchNameLogo = document.getElementById("church-name-logo");
     var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
-    churchNameLogo.classList.remove("elements-hide");
-    churchNameLogo.classList.add("elements-visible");
     sabbathColumn.classList.remove("elements-hide");
     sabbathColumn.classList.add("elements-visible");
-    blurElement.classList.remove("blur-filter");
-    blurElement.classList.add("no-blur-filter");
 
     document.getElementById("mobile-navbar-button").style.opacity = 1;
     document.getElementById("mobile-navbar-button").style.cursor = "pointer";
     document.getElementById("my-nav").style.right = "-100%";
+    document.getElementById("my-nav-background").style.opacity = 0;
     document.getElementById("navbar-bar").style.top = "2em";
     menuButton.style.top = "2em";
     menuButton.style.opacity = 1;
