@@ -41,6 +41,8 @@
 }
 
 .title-box-404 {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
     background-color: rgba(255, 255, 255, 0.5);
     font-family: sans-serif;
     -webkit-backdrop-filter: blur(40px) contrast(90%) brightness(150%);
