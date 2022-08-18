@@ -1,0 +1,67 @@
+/* --- Tite --- */
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    text-align: center;
+}
+
+.title {
+    color: #252525;
+    font-weight: 700;
+    cursor: default;
+    font-size: 5rem;
+}
+
+.title-description {
+    cursor: default;
+    font-size: 1.5rem;
+}
+
+.title-button {
+    white-space: nowrap;
+    color: #002938;
+    border: 2pt solid #002938;
+    padding: 2%;
+    border-radius: 10px;
+    transition: .3s;
+    font-size: 1rem;
+}
+
+.title-button:hover {
+    color: whitesmoke;
+    background-color: #002938;
+    transition: .3s;
+}
+
+.title-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: sans-serif;
+    -webkit-backdrop-filter: blur(40px) contrast(90%) brightness(150%);
+    backdrop-filter: blur(40px) contrast(90%) brightness(150%);
+    border-radius: 30px;
+    padding: 3vh;
+}
+
+/* --- Media Queries ---- */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px) {
+    .symbol {
+        max-width: 90%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

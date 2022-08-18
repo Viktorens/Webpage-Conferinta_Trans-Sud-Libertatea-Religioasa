@@ -333,7 +333,8 @@ footer {
     display: flex;
     text-align: initial;
     color: #f5f5f5;
-    padding-bottom: 25px !important;
+    position: relative;
+    bottom: 2em;
 }
 
 .footer-bg {
