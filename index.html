@@ -54,8 +54,6 @@
             </div>
 
         </div>
-        <!-- Gradient -->
-        <canvas id="gradient-canvas" data-transition-in></canvas>
         <!-- Sabbath Column -->
         <a class="sabbath-column" id="sabbath-column-button" onclick="openNav(); disableScrolling()">
             <img class="symbol" src="./img/20211024_biserica_adventista_LR_TransSud_Symbol.svg" alt="Logo">
@@ -101,6 +99,8 @@
         <button type="button" class="scroll-to-top-btn" id="scroll-to-top-btn">
             <i class="bi bi-chevron-bar-up"></i>
         </button>
+        <!-- Background Image -->
+        <div class="img-src"></div>
         <!-- Main -->
         <main id="main" class="no-blur-filter">
             <div id="banner-title" class="banner">
@@ -168,7 +168,7 @@
                         <h3>Resurse</h3>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6 col-md-12">
+                        <div class="col-lg-6 col-md-12 resource-download-container">
                             <p class="resource-category-title">Model Cereri/Adeverințe</p>
                             <div class="resource-download-bg">
                                 <a class="resource-download-button"
@@ -221,12 +221,13 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-md-12">
-                            <p class="resource-category-title">Legi si legislație</p>
+                        <div class="col-lg-6 col-md-12 resource-download-container">
+                            <p class="resource-category-title">Legi și legislație</p>
                             <div class="resource-download-bg">
                                 <a class="resource-download-button" href="/files/Art.29-din-Constituția-României.docx"
                                     download="">
-                                    <div class="resource-download-icon"><i class="bi bi-file-earmark-word"></i></div>
+                                    <div class="resource-download-icon"><i class="bi bi-file-earmark-word"></i>
+                                    </div>
                                     <span>Art. 29 din Constituția României</span>
                                 </a>
                             </div>
@@ -234,7 +235,8 @@
                                 <a class="resource-download-button"
                                     href="/files/Legea-privind-libertatea-religioasă-și-regimul-general-al-cultelor.docx"
                                     download="">
-                                    <div class="resource-download-icon"><i class="bi bi-file-earmark-word"></i></div>
+                                    <div class="resource-download-icon"><i class="bi bi-file-earmark-word"></i>
+                                    </div>
                                     <span>Legea privind libertatea religioasă și regimul general al cultelor</span>
                                 </a>
                             </div>
@@ -248,14 +250,16 @@
                                 <a class="resource-download-button"
                                     href="https://www.constitutiaromaniei.ro/art-29-libertatea-constiintei"
                                     target="_blank">
-                                    <div class="resource-download-icon"><i class="bi bi-globe2"></i></div><span>Art. 29
+                                    <div class="resource-download-icon"><i class="bi bi-globe2"></i></div><span>Art.
+                                        29
                                         din Constituția României</span>
                                 </a>
                             </div>
                             <div class="resource-download-bg">
                                 <a class="resource-download-button"
                                     href="http://legislatie.just.ro/Public/DetaliiDocument/156588" target="_blank">
-                                    <div class="resource-download-icon"><i class="bi bi-globe2"></i></div><span>LEGE nr.
+                                    <div class="resource-download-icon"><i class="bi bi-globe2"></i></div><span>LEGE
+                                        nr.
                                         489 din 28 decembrie 2006</span>
                                 </a>
                             </div>
@@ -263,15 +267,16 @@
                                 <a class="resource-download-button"
                                     href="https://ro.usembassy.gov/ro/romania-raportul-international-privind-libertatea-religioasa-in-anul-2020"
                                     target="_blank">
-                                    <div class="resource-download-icon"><i class="bi bi-globe2"></i></div><span>Raportul
+                                    <div class="resource-download-icon"><i class="bi bi-globe2"></i></div>
+                                    <span>Raportul
                                         international privind libertatea religioasă in anul 2020</span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <br>
                 </section>
-
+                <br>
+                <br>
             </section>
             <!-- Footer -->
             <footer>
@@ -316,7 +321,6 @@
         </main>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="./js/script.js"></script>
-        <script type="module" src="./js/scriptGradient.js"></script>
     </body>
 
 </html>

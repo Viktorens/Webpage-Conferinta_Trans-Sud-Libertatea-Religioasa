@@ -125,9 +125,10 @@
 
 .col-md-12,
 .col-lg-6 {
-    display: grid;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .about-subtitle,
@@ -192,6 +193,7 @@
     border-radius: 15px;
     margin: 10px 0 10px 0;
     transition: .4s;
+    width: 95%;
 }
 
 .resource-download-button:hover {
@@ -204,6 +206,7 @@
     margin-right: 15px;
     font-size: 25px;
 }
+
 
 /* --- Media Queries ---- */
 

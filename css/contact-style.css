@@ -96,9 +96,15 @@
     color: black;
 }
 
-.contact-element-description:hover {
+.contact-element:nth-child(2) .contact-element-description:hover,
+.contact-element:nth-child(3) .contact-element-description:hover,
+.contact-element:nth-child(4) .contact-element-description:hover {
     text-decoration: underline;
     color: black;
+}
+
+.contact-element span {
+    cursor: default;
 }
 
 .image-contact {
