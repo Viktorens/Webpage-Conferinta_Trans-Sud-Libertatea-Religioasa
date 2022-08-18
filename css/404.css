@@ -24,6 +24,7 @@
     white-space: nowrap;
     color: #002938;
     border: 3pt solid #002938;
+    background-color: whitesmoke;
     padding: 3%;
     border-radius: 50px;
     transition: .3s;
