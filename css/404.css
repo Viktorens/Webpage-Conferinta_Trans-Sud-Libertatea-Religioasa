@@ -1,5 +1,5 @@
 /* --- Tite --- */
-.banner {
+.banner-404 {
     position: absolute;
     top: 50%;
     left: 41%;
@@ -8,19 +8,19 @@
     text-align: center;
 }
 
-.title {
+.title-404 {
     color: #252525;
     font-weight: 700;
     cursor: default;
     font-size: 5rem;
 }
 
-.title-description {
+.title-description-404 {
     cursor: default;
     font-size: 1.5rem;
 }
 
-.title-button {
+.title-button-404 {
     white-space: nowrap;
     color: #002938;
     border: 2pt solid #002938;
@@ -30,13 +30,13 @@
     font-size: 1rem;
 }
 
-.title-button:hover {
+.title-button-404:hover {
     color: whitesmoke;
     background-color: #002938;
     transition: .3s;
 }
 
-.title-box {
+.title-box-404 {
     background-color: rgba(255, 255, 255, 0.5);
     font-family: sans-serif;
     -webkit-backdrop-filter: blur(40px) contrast(90%) brightness(150%);
