@@ -24,7 +24,7 @@
     white-space: nowrap;
     color: #002938;
     border: 3pt solid #002938;
-    padding: 4%;
+    padding: 4% 10%;
     border-radius: 50px;
     transition: .3s;
     font-size: 15px;
@@ -48,6 +48,7 @@
     backdrop-filter: blur(40px) contrast(90%) brightness(150%);
     border-radius: 30px;
     padding: 3vh;
+    width: 110%;
 }
 
 /* --- Media Queries ---- */
