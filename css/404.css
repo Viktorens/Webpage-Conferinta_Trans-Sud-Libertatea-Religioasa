@@ -22,11 +22,12 @@
 .title-button-404 {
     white-space: nowrap;
     color: #002938;
-    border: 2pt solid #002938;
+    border: 3pt solid #002938;
     padding: 2%;
-    border-radius: 10px;
+    border-radius: 50px;
     transition: .3s;
     font-size: 15px;
+    font-weight: 700;
 }
 
 .title-button-404:hover {
