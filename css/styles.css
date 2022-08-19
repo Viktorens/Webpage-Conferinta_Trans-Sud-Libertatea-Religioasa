@@ -221,7 +221,8 @@ p {
     justify-content: space-between;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    width: 83.5%
+    width: 83.5%;
+    padding: 1.7rem;
 }
 
 .desktop-nav {
@@ -249,6 +250,7 @@ p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    margin: 0 2%;
 }
 
 .navbar-button {
@@ -260,21 +262,20 @@ p {
     transition: .4s;
     display: flex;
     align-items: center;
-    margin: 0 2%;
     border-radius: 15px;
     padding: 4px 6px;
 }
 
 .navbar-button:hover {
     color: #f5f5f5;
-    background-color: #002938;
+    background-color: #007f98;
     border-radius: 15px;
     transition: .4s;
 }
 
 .active-tab {
     color: #f5f5f5;
-    background-color: #002938;
+    background-color: #007f98;
     border-radius: 15px;
 }
 
@@ -292,7 +293,7 @@ p {
 
 /* Mobile Navbar */
 .mobile-navbar-button {
-    color: #002938;
+    color: #007f98;
     height: 60px;
     width: 60px;
     background: whitesmoke;
@@ -313,7 +314,7 @@ i.bi.bi-list {
 
 /* Church Name */
 .church-name-logo {
-    width: 35vh;
+    width: 20rem;
     z-index: 5;
     object-fit: cover;
 }
@@ -338,7 +339,7 @@ footer {
 }
 
 .footer-bg {
-    background-color: #002938;
+    background-color: whitesmoke;
     width: 97.5%;
     border-radius: 0 25px 25px 0;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
@@ -355,13 +356,13 @@ footer .col-md-12 {
 /* --- Social Media Buttons --- */
 .social-media {
     display: block;
-    padding: 20px 0px 20px 0px;
+    padding: 15px 0px 15px 0px;
 }
 
 .social-media-button {
     display: flex;
     justify-content: left;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .social-media-button .social-media-icon {
@@ -372,16 +373,21 @@ footer .col-md-12 {
 .social-media-button span {
     display: flex;
     align-items: center;
-    color: #f5f5f5;
+    color: black;
 }
 
 .social-media-icon {
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
+.social-media-icon h3 {
+    font-size: 20px;
+}
+
+
 .icon-email {
-    color: #f5f5f5;
+    color: black;
 }
 
 .icon-facebook {
@@ -411,16 +417,18 @@ footer .col-md-12 {
 /* Useful Links */
 .useful-links-button {
     display: flex;
-    color: #f5f5f5;
-    font-size: 18px;
+    color: black;
+    font-size: 15px;
 }
 
 .useful-links-button:hover {
     text-decoration: underline;
+    color: black;
 }
 
 .useful-links-icon {
     display: flex;
+    color: #007f98;
     align-items: center;
     margin-right: 15px;
     font-size: 8px;
@@ -431,14 +439,15 @@ footer .col-md-12 {
 .copyright {
     display: flex;
     cursor: pointer;
-    text-decoration: #f5f5f5;
-    color: #f5f5f5;
+    text-decoration: black;
+    color: black;
     padding: 0% 0% .5% 1%;
     font-size: 10px;
 }
 
 .copyright:hover {
     text-decoration: underline;
+    color: black
 }
 
 /* Scroll Up Button */
@@ -516,7 +525,7 @@ i.bi.bi-chevron-bar-up {
     }
 
     .church-name-logo {
-        width: 23vh;
+        width: 12rem;
 
     }
 
@@ -637,6 +646,12 @@ i.bi.bi-chevron-bar-up {
     }
 
 
+}
+
+@media (max-width: 992px) {
+    .useful-links-button {
+        display: none;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */

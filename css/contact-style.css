@@ -1,7 +1,7 @@
 /* --- Tite --- */
 #banner-title {
-    height: 40vh;
-    top: 9vh;
+    height: 22rem;
+    top: 5rem;
     position: relative;
 }
 
@@ -30,7 +30,7 @@
     backdrop-filter: blur(40px) contrast(90%) brightness(150%);
     border-radius: 0 30px 30px 0;
     max-height: 50%;
-    padding: 3vh 0;
+    padding: 1.5rem 0;
 }
 
 /* Line */
@@ -44,8 +44,8 @@
     text-align: right;
     justify-content: right;
     width: 35px;
-    border: 4px solid #002938;
-    background: #002938;
+    border: 3px solid #007f98;
+    background: #007f98;
     border-radius: 10px;
     margin-top: 0px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
@@ -54,8 +54,8 @@
 .line-long {
     align-items: center;
     width: 130px;
-    border: 4px solid #002938;
-    background: #002938;
+    border: 3px solid #007f98;
+    background: #007f98;
     border-radius: 10px;
     margin-left: 20px;
     margin-top: 0px;
@@ -87,7 +87,7 @@
 }
 
 .contact-element-title {
-    color: #002938;
+    color: #007f98;
     margin-right: 2%;
 }
 
@@ -143,7 +143,7 @@
 
     .title {
         font-size: 30px;
-        padding-left: 0%;
+        padding-left: .4rem;
         border-radius: 0;
     }
 
@@ -186,6 +186,11 @@
 
     .image-contact {
         margin-top: 30px;
+    }
+
+    #banner-title {
+        height: 27rem;
+        top: 6rem;
     }
 }
 
