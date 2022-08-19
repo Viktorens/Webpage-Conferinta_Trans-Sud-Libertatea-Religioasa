@@ -64,6 +64,7 @@
     display: flex;
     align-items: center;
     padding: .5rem;
+    white-space: nowrap;
 }
 
 /* Line */
@@ -252,8 +253,6 @@
     .title-button-container {
         margin-left: 4%;
     }
-
-
 
     .aboutName {
         font-size: 45px;

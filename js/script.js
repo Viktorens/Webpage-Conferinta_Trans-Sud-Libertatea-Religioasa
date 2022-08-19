@@ -131,6 +131,7 @@ document.addEventListener("scroll", handleScroll);
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
+
 var prevScrollpos = window.pageYOffset;
 
 async function handleNavbar() {
