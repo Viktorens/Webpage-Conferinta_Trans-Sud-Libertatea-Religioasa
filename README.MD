@@ -1,4 +1,4 @@
-# Pagina web a Departartamentul "Libertatea Reliogioasă" - Conferinței Transilvania Sud a bisericii adventiste de ziua a șaptea din România
+# Official webpage of the religious freedom departament of the South Transylvania Conference of the Seventh Day Adventist Church from Romania
 
 ### Short description
 
