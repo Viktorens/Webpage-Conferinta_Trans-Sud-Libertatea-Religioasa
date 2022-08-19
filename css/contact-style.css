@@ -172,7 +172,7 @@
 
     .title {
         font-size: 30px;
-        padding-left: 0%;
+        padding-left: 3%;
         border-radius: 0 30px 30px 0;
     }
 
@@ -181,7 +181,6 @@
     }
 
     .contact-element {
-
         flex-direction: column;
     }
 

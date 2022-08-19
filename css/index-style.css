@@ -41,7 +41,7 @@
     justify-content: left;
     transition: .4s;
     border-radius: 50px;
-    background-color: #007f98;
+    background-color: #002938;
     text-transform: uppercase;
     padding: .2rem .5rem;
 }
@@ -56,7 +56,7 @@
 }
 
 .title-button:hover {
-    background-color: #002938;
+    background-color: #007f98;
     transition: .4s;
 }
 
