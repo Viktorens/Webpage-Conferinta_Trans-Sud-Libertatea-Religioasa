@@ -1,4 +1,4 @@
-/* General */
+/* --- General --- */
 html * {
     font-family: 'Montserrat';
     box-sizing: border-box;
@@ -42,6 +42,67 @@ p {
     width: 85.72%;
 }
 
+/* --- Fade In/Out classes --- */
+
+.reveal {
+    filter: blur(5px);
+    transform: translateY(10%);
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.reveal.active {
+    filter: blur(0);
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.hide-menu-elements-fade {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(50%);
+    transition: all 1s !important;
+}
+
+.show-elements-fade {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transform: translateX(0);
+}
+
+.button-fade-2 {
+    transition-delay: 200ms !important;
+}
+
+.button-fade-3 {
+    transition-delay: 200ms !important;
+}
+
+.button-fade-4 {
+    transition-delay: 200ms !important;
+}
+
+.button-fade-5 {
+    transition-delay: 200ms !important;
+}
+
+.button-fade-6 {
+    transition-delay: 200ms !important;
+}
+
+.button-fade-7 {
+    transition-delay: 200ms !important;
+}
+
+.menu-button-fade-2 {
+    transition-delay: 200ms !important;
+}
+
+.menu-button-fade-3 {
+    transition-delay: 400ms !important;
+}
+
 /* Show/Hide Elements */
 .elements-hide {
     transition: 0.5s;
@@ -53,7 +114,7 @@ p {
     opacity: 1;
 }
 
-/* Menu Overlay */
+/* --- Menu Overlay --- */
 .overlay {
     -webkit-backdrop-filter: blur(40px) contrast(90%);
     backdrop-filter: blur(40px) contrast(90%);
@@ -162,7 +223,7 @@ p {
     cursor: default;
 }
 
-/* Sabbath Column */
+/* --- Sabbath Column --- */
 .sabbath-column {
     position: fixed;
     /* height: calc(100vh - calc(100vh - 100%)); */
@@ -415,18 +476,21 @@ footer .col-md-12 {
 }
 
 /* Useful Links */
-.useful-links-button {
+.useful-links-button,
+.menu-useful-links-button {
     display: flex;
     color: black;
     font-size: 15px;
 }
 
-.useful-links-button:hover {
+.useful-links-button:hover,
+.menu-useful-links-button:hover {
     text-decoration: underline;
     color: black;
 }
 
-.useful-links-icon {
+.useful-links-icon,
+.menu-useful-links-icon {
     display: flex;
     color: #007f98;
     align-items: center;
@@ -434,6 +498,21 @@ footer .col-md-12 {
     font-size: 8px;
 }
 
+.menu-useful-links {
+    padding: 10vh 0 0 0;
+}
+
+.menu-useful-links-button {
+    color: whitesmoke;
+}
+
+.menu-useful-links-button:hover {
+    color: whitesmoke;
+}
+
+.menu-useful-links-icon {
+    color: whitesmoke;
+}
 
 /* --- Copyright --- */
 .copyright {
