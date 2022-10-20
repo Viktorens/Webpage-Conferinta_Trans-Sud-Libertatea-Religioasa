@@ -598,6 +598,10 @@ i.bi.bi-chevron-bar-up {
         font-size: 25px;
     }
 
+    .overlay-link {
+        font-size: 4vh;
+    }
+
     .overlay-p {
         font-size: .7rem;
     }
