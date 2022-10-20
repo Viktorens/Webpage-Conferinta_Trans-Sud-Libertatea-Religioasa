@@ -1,4 +1,4 @@
-/* General */
+/* --- General --- */
 html * {
     font-family: 'Montserrat';
     box-sizing: border-box;
@@ -42,6 +42,73 @@ p {
     width: 85.72%;
 }
 
+/* --- Remove events button --- */
+.menu-button-fade-2,
+.nav-item:nth-child(2) {
+    display: none;
+}
+
+/* --- Fade In/Out classes --- */
+
+.reveal {
+    filter: blur(5px);
+    transform: translateY(10%);
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.reveal.active {
+    filter: blur(0);
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.hide-menu-elements-fade {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(50%);
+    transition: all 1s !important;
+}
+
+.show-elements-fade {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transform: translateX(0);
+}
+
+.button-fade-2 {
+    transition-delay: 200ms !important;
+}
+
+.button-fade-3 {
+    transition-delay: 200ms !important;
+}
+
+.button-fade-4 {
+    transition-delay: 200ms !important;
+}
+
+.button-fade-5 {
+    transition-delay: 200ms !important;
+}
+
+.button-fade-6 {
+    transition-delay: 200ms !important;
+}
+
+.button-fade-7 {
+    transition-delay: 200ms !important;
+}
+
+.menu-button-fade-2 {
+    transition-delay: 200ms !important;
+}
+
+.menu-button-fade-3 {
+    transition-delay: 400ms !important;
+}
+
 /* Show/Hide Elements */
 .elements-hide {
     transition: 0.5s;
@@ -53,7 +120,7 @@ p {
     opacity: 1;
 }
 
-/* Menu Overlay */
+/* --- Menu Overlay --- */
 .overlay {
     -webkit-backdrop-filter: blur(40px) contrast(90%);
     backdrop-filter: blur(40px) contrast(90%);
@@ -109,7 +176,10 @@ p {
     display: block;
     transition: 0.3s;
     font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
     max-width: 0;
+    font-size: 2vmax;
 }
 
 .overlay-link:hover,
@@ -158,11 +228,11 @@ p {
 
 .overlay-p {
     color: whitesmoke;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: default;
 }
 
-/* Sabbath Column */
+/* --- Sabbath Column --- */
 .sabbath-column {
     position: fixed;
     /* height: calc(100vh - calc(100vh - 100%)); */
@@ -194,6 +264,10 @@ p {
 
 .sabbath-column:hover:before {
     opacity: 1;
+    cursor: pointer;
+}
+
+.symbol:hover {
     cursor: pointer;
 }
 
@@ -415,18 +489,21 @@ footer .col-md-12 {
 }
 
 /* Useful Links */
-.useful-links-button {
+.useful-links-button,
+.menu-useful-links-button {
     display: flex;
     color: black;
     font-size: 15px;
 }
 
-.useful-links-button:hover {
+.useful-links-button:hover,
+.menu-useful-links-button:hover {
     text-decoration: underline;
     color: black;
 }
 
-.useful-links-icon {
+.useful-links-icon,
+.menu-useful-links-icon {
     display: flex;
     color: #007f98;
     align-items: center;
@@ -434,6 +511,21 @@ footer .col-md-12 {
     font-size: 8px;
 }
 
+.menu-useful-links {
+    padding: 7vh 0 0 0;
+}
+
+.menu-useful-links-button {
+    color: whitesmoke;
+}
+
+.menu-useful-links-button:hover {
+    color: whitesmoke;
+}
+
+.menu-useful-links-icon {
+    color: whitesmoke;
+}
 
 /* --- Copyright --- */
 .copyright {
@@ -451,6 +543,24 @@ footer .col-md-12 {
 }
 
 /* Scroll Up Button */
+.scroll-to-top-container {
+    -webkit-backdrop-filter: blur(10px) contrast(90%);
+    backdrop-filter: blur(10px) contrast(90%);
+    display: inline-block;
+    position: fixed;
+    border: none;
+    height: 60px;
+    width: 60px;
+    z-index: 100;
+    bottom: 40px;
+    right: 15px;
+    border-radius: 50px;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all .5s ease;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
 .scroll-to-top-btn {
     display: inline-block;
     position: fixed;
@@ -458,25 +568,15 @@ footer .col-md-12 {
     color: #f5f5f5;
     height: 60px;
     width: 60px;
-    margin: 0 5px;
     overflow: hidden;
     background: #002938;
+    opacity: 0.65;
     border-radius: 50px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     text-align: center;
-    bottom: 50px;
-    right: 1.5%;
-    z-index: 100;
-    opacity: 0;
-    transform: translateY(150px);
     transition: all .5s ease;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
-}
-
-.scroll-to-top-btn:hover {
-    opacity: 1;
 }
 
 i.bi.bi-chevron-bar-up {
@@ -484,7 +584,7 @@ i.bi.bi-chevron-bar-up {
 }
 
 .show-btn {
-    opacity: 0.75;
+    opacity: 1;
     transform: translateY(0px);
 }
 
@@ -513,7 +613,7 @@ i.bi.bi-chevron-bar-up {
     }
 
     .overlay-link {
-        font-size: 30px
+        font-size: 5vh;
     }
 
     .overlay-p {
@@ -526,7 +626,6 @@ i.bi.bi-chevron-bar-up {
 
     .church-name-logo {
         width: 12rem;
-
     }
 
     .desktop-navbar {
@@ -580,10 +679,6 @@ i.bi.bi-chevron-bar-up {
 
     .banner-button {
         font-size: 30px;
-    }
-
-    .banner {
-        background-attachment: scroll;
     }
 
     .navbar-toggler {
@@ -644,8 +739,6 @@ i.bi.bi-chevron-bar-up {
     .useful-links-button {
         padding-bottom: 30px;
     }
-
-
 }
 
 @media (max-width: 992px) {

@@ -103,7 +103,7 @@ function enableScrolling() {
  * Scroll Up Button
  */
 
-var scrollToTopBtn = document.querySelector(".scroll-to-top-btn");
+var scrollToTopBtn = document.querySelector(".scroll-to-top-container");
 var rootElement = document.documentElement;
 
 function handleScroll() {
@@ -145,3 +145,40 @@ async function handleNavbar() {
     prevScrollpos = currentScrollPos;
 }
 document.addEventListener("scroll", handleNavbar);
+
+/**
+ * Elements fade in/out on scroll
+ */
+
+function revealElements() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for (var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 25;
+
+        if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('active');
+        }
+        else {
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+window.addEventListener('scroll', revealElements);
+
+// animation for revealing the menu buttons
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-elements-fade');
+        } else {
+            entry.target.classList.remove('show-elements-fade');
+        }
+    });
+});
+const hiddenMenuElementsFade = document.querySelectorAll('.hide-menu-elements-fade');
+hiddenMenuElementsFade.forEach((element) => observer.observe(element));
