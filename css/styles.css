@@ -226,7 +226,7 @@ p {
 
 .overlay-p {
     color: whitesmoke;
-    font-size: 1.2vmin;
+    font-size: 1.2vh;
     cursor: default;
 }
 
@@ -603,7 +603,7 @@ i.bi.bi-chevron-bar-up {
     }
 
     .overlay-p {
-        font-size: .7vh;
+        font-size: 1vh;
     }
 
     .copyright {
