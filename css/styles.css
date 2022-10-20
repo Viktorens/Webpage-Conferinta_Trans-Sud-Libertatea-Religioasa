@@ -551,10 +551,9 @@ footer .col-md-12 {
     border: none;
     height: 60px;
     width: 60px;
-    margin: 0 5px;
     z-index: 100;
     bottom: 50px;
-    right: 1.5%;
+    right: 25px;
     border-radius: 50px;
     opacity: 0;
     transform: translateY(150px);
