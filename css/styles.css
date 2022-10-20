@@ -42,6 +42,12 @@ p {
     width: 85.72%;
 }
 
+/* --- Remove events button --- */
+.menu-button-fade-2,
+.nav-item:nth-child(2) {
+    display: none;
+}
+
 /* --- Fade In/Out classes --- */
 
 .reveal {
@@ -171,6 +177,7 @@ p {
     transition: 0.3s;
     font-size: 40px;
     max-width: 0;
+    font-size: 2vmax;
 }
 
 .overlay-link:hover,
@@ -499,7 +506,7 @@ footer .col-md-12 {
 }
 
 .menu-useful-links {
-    padding: 10vh 0 0 0;
+    padding: 7vh 0 0 0;
 }
 
 .menu-useful-links-button {
@@ -591,10 +598,6 @@ i.bi.bi-chevron-bar-up {
         font-size: 25px;
     }
 
-    .overlay-link {
-        font-size: 30px
-    }
-
     .overlay-p {
         font-size: .7rem;
     }
@@ -605,7 +608,6 @@ i.bi.bi-chevron-bar-up {
 
     .church-name-logo {
         width: 12rem;
-
     }
 
     .desktop-navbar {
@@ -659,10 +661,6 @@ i.bi.bi-chevron-bar-up {
 
     .banner-button {
         font-size: 30px;
-    }
-
-    .banner {
-        background-attachment: scroll;
     }
 
     .navbar-toggler {
@@ -723,8 +721,6 @@ i.bi.bi-chevron-bar-up {
     .useful-links-button {
         padding-bottom: 30px;
     }
-
-
 }
 
 @media (max-width: 992px) {
