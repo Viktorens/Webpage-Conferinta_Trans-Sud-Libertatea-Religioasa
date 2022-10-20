@@ -176,6 +176,8 @@ p {
     display: block;
     transition: 0.3s;
     font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
     max-width: 0;
     font-size: 2vmax;
 }
@@ -262,6 +264,10 @@ p {
 
 .sabbath-column:hover:before {
     opacity: 1;
+    cursor: pointer;
+}
+
+.symbol:hover {
     cursor: pointer;
 }
 
@@ -537,6 +543,25 @@ footer .col-md-12 {
 }
 
 /* Scroll Up Button */
+.scroll-to-top-container {
+    -webkit-backdrop-filter: blur(10px) contrast(90%);
+    backdrop-filter: blur(10px) contrast(90%);
+    display: inline-block;
+    position: fixed;
+    border: none;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    z-index: 100;
+    bottom: 50px;
+    right: 1.5%;
+    border-radius: 50px;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all .5s ease;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
 .scroll-to-top-btn {
     display: inline-block;
     position: fixed;
@@ -544,25 +569,15 @@ footer .col-md-12 {
     color: #f5f5f5;
     height: 60px;
     width: 60px;
-    margin: 0 5px;
     overflow: hidden;
     background: #002938;
+    opacity: 0.65;
     border-radius: 50px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     text-align: center;
-    bottom: 50px;
-    right: 1.5%;
-    z-index: 100;
-    opacity: 0;
-    transform: translateY(150px);
     transition: all .5s ease;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
-}
-
-.scroll-to-top-btn:hover {
-    opacity: 1;
 }
 
 i.bi.bi-chevron-bar-up {
@@ -570,7 +585,7 @@ i.bi.bi-chevron-bar-up {
 }
 
 .show-btn {
-    opacity: 0.75;
+    opacity: 1;
     transform: translateY(0px);
 }
 

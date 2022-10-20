@@ -103,7 +103,7 @@ function enableScrolling() {
  * Scroll Up Button
  */
 
-var scrollToTopBtn = document.querySelector(".scroll-to-top-btn");
+var scrollToTopBtn = document.querySelector(".scroll-to-top-container");
 var rootElement = document.documentElement;
 
 function handleScroll() {
