@@ -398,7 +398,6 @@ i.bi.bi-list {
     margin: auto;
     color: #252525;
     background: #f5f5f5;
-    margin: 7vw;
     border-radius: 40px;
 }
 
@@ -645,6 +644,10 @@ i.bi.bi-chevron-bar-up {
         justify-content: center;
     }
 
+    .all-sections {
+        margin: 7vw 0;
+    }
+
     footer .col-bg-6,
     footer .col-md-12 {
         display: grid;
@@ -702,6 +705,9 @@ i.bi.bi-chevron-bar-up {
 
     .useful-links-button {
         padding-bottom: 30px;
+    }
+    .all-sections {
+        margin: 7vw 0;
     }
 }
 
@@ -764,6 +770,9 @@ i.bi.bi-chevron-bar-up {
 
     .useful-links-button {
         padding-bottom: 15px;
+    }
+    .all-sections {
+        margin: 7vw;
     }
 }
 
