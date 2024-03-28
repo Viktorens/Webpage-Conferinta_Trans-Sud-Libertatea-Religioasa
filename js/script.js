@@ -15,7 +15,7 @@ function openInNewTab(url) {
 function openNav() {
     var sabbathColumn = document.getElementById("sabbath-column-button");
     var menuButton = document.getElementById("navbar-bar");
-    var scrollToTopButton = document.getElementById("scroll-to-top-btn");
+    var scrollToTopButton = document.getElementById("scroll-to-top");
 
     sabbathColumn.classList.remove("elements-visible");
     sabbathColumn.classList.add("elements-hide");
@@ -35,7 +35,7 @@ function openNav() {
 function closeNav() {
     var sabbathColumn = document.getElementById("sabbath-column-button");
     var menuButton = document.getElementById("navbar-bar");
-    var scrollToTopButton = document.getElementById("scroll-to-top-btn");
+    var scrollToTopButton = document.getElementById("scroll-to-top");
 
     sabbathColumn.classList.remove("elements-hide");
     sabbathColumn.classList.add("elements-visible");
