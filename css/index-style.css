@@ -8,11 +8,12 @@
     padding-right: 10%;
     top: 40%;
     color: #252525;
-    font-weight: 800;
+    font-weight: 700;
     cursor: default;
     border-radius: 0 30px 30px 0;
     padding-bottom: 4vh;
     margin-bottom: 0;
+    font-size: 30px;
 }
 
 .title-container {
@@ -128,7 +129,7 @@
 .col-lg-6 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     flex-direction: column;
 }
 
@@ -139,8 +140,8 @@
     margin: 40px 0 20px 0;
     line-height: 40px;
     word-break: keep-all;
-    font-weight: 800;
-    font-size: 45px;
+    font-weight: 700;
+    font-size: 30px;
     margin: 20px 0;
 }
 
@@ -150,17 +151,15 @@
     font-size: 15px;
     line-height: 25px;
     word-wrap: break-word;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+    hyphens: none;
     text-align: left;
     margin: 20px 15px;
 }
 
 .image-about {
-    width: 90%;
+    width: 95%;
     border-radius: 30px;
     transition: all 0.6s ease-out;
-    margin: auto;
 }
 
 /* Resources Section */
@@ -223,7 +222,6 @@
     }
 
     .title {
-        font-size: 30px;
         padding-left: 0%;
         border-radius: 0;
     }
@@ -235,7 +233,7 @@
     .resource-category-title,
     .about-subtitle {
         font-size: 25px;
-        margin: 0px 0 20px 0;
+        margin: 20px 0px 0px 0;
     }
 }
 
@@ -247,7 +245,6 @@
     }
 
     .title {
-        font-size: 30px;
         padding-left: 0%;
         border-radius: 0 30px 30px 0;
     }
@@ -267,7 +264,6 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .title {
-        font-size: 35px;
         padding-left: 30%;
     }
 
@@ -282,7 +278,4 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .title {
-        font-size: 35px;
-    }
 }

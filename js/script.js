@@ -137,7 +137,7 @@ var prevScrollpos = window.pageYOffset;
 async function handleNavbar() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos || window.pageYOffset <= 50) {
-        document.getElementById("navbar-bar").style.top = "2em";
+        document.getElementById("navbar-bar").style.top = "10px";
     } else {
         await delay(100);
         document.getElementById("navbar-bar").style.top = "-200px";
