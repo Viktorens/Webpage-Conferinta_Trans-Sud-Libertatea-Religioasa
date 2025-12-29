@@ -283,7 +283,7 @@ p {
 #navbar-bar {
     display: flex;
     position: fixed;
-    top: 2em;
+    top: 10px;
     flex-wrap: nowrap;
     z-index: 5;
     transition: .4s;
@@ -296,7 +296,6 @@ p {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     width: 83.5%;
-    padding: 1.7rem;
 }
 
 .desktop-nav {
@@ -645,7 +644,7 @@ i.bi.bi-chevron-bar-up {
     }
 
     .all-sections {
-        margin: 7vw 0;
+        margin: 20px 0;
     }
 
     footer .col-bg-6,
@@ -707,7 +706,7 @@ i.bi.bi-chevron-bar-up {
         padding-bottom: 30px;
     }
     .all-sections {
-        margin: 7vw 0;
+        margin: 20px 0;
     }
 }
 
@@ -772,7 +771,7 @@ i.bi.bi-chevron-bar-up {
         padding-bottom: 15px;
     }
     .all-sections {
-        margin: 7vw;
+        margin: 20px;
     }
 }
 
