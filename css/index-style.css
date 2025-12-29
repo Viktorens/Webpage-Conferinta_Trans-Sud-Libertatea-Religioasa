@@ -128,7 +128,7 @@
 .col-lg-6 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     flex-direction: column;
 }
 
@@ -139,8 +139,8 @@
     margin: 40px 0 20px 0;
     line-height: 40px;
     word-break: keep-all;
-    font-weight: 800;
-    font-size: 45px;
+    font-weight: 700;
+    font-size: 30px;
     margin: 20px 0;
 }
 
