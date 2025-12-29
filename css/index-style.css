@@ -8,11 +8,12 @@
     padding-right: 10%;
     top: 40%;
     color: #252525;
-    font-weight: 800;
+    font-weight: 700;
     cursor: default;
     border-radius: 0 30px 30px 0;
     padding-bottom: 4vh;
     margin-bottom: 0;
+    font-size: 30px;
 }
 
 .title-container {
@@ -221,7 +222,6 @@
     }
 
     .title {
-        font-size: 30px;
         padding-left: 0%;
         border-radius: 0;
     }
@@ -245,7 +245,6 @@
     }
 
     .title {
-        font-size: 30px;
         padding-left: 0%;
         border-radius: 0 30px 30px 0;
     }
@@ -265,7 +264,6 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .title {
-        font-size: 35px;
         padding-left: 30%;
     }
 
@@ -280,7 +278,4 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .title {
-        font-size: 35px;
-    }
 }
